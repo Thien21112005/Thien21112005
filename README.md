@@ -1,9 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=11,19,25&height=150&section=header" />
-</div>
-
-<div align="center">
-  <img src="background.jpg" alt="Cover Image" width="100%" />
+  <img src="bia.jpg" alt="Cover Image" width="100%" />
 </div>
 
 # Hi there, I'm Ngoc Thien! 👋

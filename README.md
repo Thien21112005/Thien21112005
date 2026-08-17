@@ -84,10 +84,10 @@
 
 <div align="center">
   <br>
-  <img src="https://github-readme-stats.vercel.app/api?username=Thien21112005&show_icons=true&theme=tokyonight&hide_border=true" alt="Thien's GitHub stats" width="48%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Thien21112005&show_icons=true&theme=tokyonight&hide_border=true" alt="Thien's GitHub stats" width="48%" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&theme=tokyonight&hide_border=true" alt="Thien's GitHub Streak" width="48%" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Thien21112005&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="60%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Thien21112005&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="60%" />
 </div>
 
 ---

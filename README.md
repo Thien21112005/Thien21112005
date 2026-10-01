@@ -42,52 +42,44 @@ const developer: EngineerProfile = {
 
 ## <img src="./icons/layers.svg" width="22" height="22" /> Tech Stack & Architectural Ecosystem
 
-<table width="100%">
-  <tr>
-    <td width="26%" valign="top"><strong><img src="./icons/terminal.svg" width="14" height="14" /> Core Languages</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-      <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="26%" valign="top"><strong><img src="./icons/server.svg" width="14" height="14" /> Backend & System</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
-      <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=spring-security&logoColor=white" />
-      <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" />
-      <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="26%" valign="top"><strong><img src="./icons/layout.svg" width="14" height="14" /> Frontend & UI</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-      <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" />
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="26%" valign="top"><strong><img src="./icons/database.svg" width="14" height="14" /> Database & DevOps</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-      <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white" />
-      <img src="https://img.shields.io/badge/Git-E44C30?style=flat-square&logo=git&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="26%" valign="top"><strong><img src="./icons/cpu.svg" width="14" height="14" /> AI & Machine Learning</strong></td>
-    <td>
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
-    </td>
-  </tr>
-</table>
+<p>
+  <strong><img src="./icons/terminal.svg" width="15" height="15" /> Core Languages</strong><br>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
+</p>
+
+<p>
+  <strong><img src="./icons/server.svg" width="15" height="15" /> Backend & System Architecture</strong><br>
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+</p>
+
+<p>
+  <strong><img src="./icons/layout.svg" width="15" height="15" /> Frontend & UI Engineering</strong><br>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+</p>
+
+<p>
+  <strong><img src="./icons/database.svg" width="15" height="15" /> Database & DevOps</strong><br>
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-E44C30?style=flat-square&logo=git&logoColor=white" />
+</p>
+
+<p>
+  <strong><img src="./icons/cpu.svg" width="15" height="15" /> AI & Machine Learning</strong><br>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
+</p>
 
 ---
 

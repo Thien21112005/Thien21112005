@@ -171,11 +171,28 @@ const developer: EngineerProfile = {
 <br>
 
 <div align="center">
+  <!-- Option 1: Contribution Snake -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake.svg">
     <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake.svg" width="100%" />
   </picture>
+</div>
+
+<div align="center">
+  <!-- Option 2: 3D Isometric Contribution Skyline -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-night-rainbow.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-green-animate.svg">
+    <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
+  </picture>
+</div>
+
+<div align="center">
+  <!-- Option 3: Coding Mascot (Bongo Cat) -->
+  <br>
+  <img src="https://raw.githubusercontent.com/gist/krushndayshmookh/9fb70798bb71b38fd7ec9cee788b8c7c/raw/4d74ce241b1a24864bbf9ea1733f8f142490a5c6/bongo-cat.gif" width="280" alt="Bongo Cat Typing" />
+  <p><em>Always learning, always building, and turning ideas into code!</em></p>
 </div>
 
 <div align="center">

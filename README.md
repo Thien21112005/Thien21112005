@@ -42,6 +42,8 @@ const developer: EngineerProfile = {
 
 ## <img src="./icons/layers.svg" width="22" height="22" /> Tech Stack & Architectural Ecosystem
 
+<div align="center">
+
 <p>
   <strong><img src="./icons/terminal.svg" width="15" height="15" /> Core Languages</strong><br>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
@@ -80,6 +82,8 @@ const developer: EngineerProfile = {
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
 </p>
+
+</div>
 
 ---
 

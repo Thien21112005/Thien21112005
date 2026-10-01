@@ -93,7 +93,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> CineBook UI Kit</h3>
+      <h3><img src="./icons/ticket.svg" width="18" height="18" /> CineBook UI Kit</h3>
       <p>A high-fidelity, interactive HTML/Tailwind prototype for a modern cinema platform. Ready for Concurrency (Redis Redlock) & AI Chatbot integration.</p>
       <p>
         <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
@@ -106,7 +106,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> MayVang Platform</h3>
+      <h3><img src="./icons/hotel.svg" width="18" height="18" /> MayVang Platform</h3>
       <p>An advanced full-stack hotel/booking management system (upgraded version). Built with a decoupled micro-architecture separating Java Backend and JS Frontend.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
@@ -121,7 +121,7 @@
 
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> Sentiment Analysis</h3>
+      <h3><img src="./icons/sparkles.svg" width="18" height="18" /> Sentiment Analysis</h3>
       <p>Final project for Machine Learning class (HCMUTE). Built a text sentiment analysis model using various Machine Learning algorithms. Decoupled into Frontend and Backend.</p>
       <p>
         <img src="https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
@@ -133,7 +133,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> Heuristic Caro NxN</h3>
+      <h3><img src="./icons/gamepad.svg" width="18" height="18" /> Heuristic Caro NxN</h3>
       <p>An Artificial Intelligence bot capable of playing Caro (Gomoku) on an NxN board, applying Heuristic search algorithms for optimal moves.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
@@ -149,7 +149,7 @@
 
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> Folder Locker</h3>
+      <h3><img src="./icons/lock.svg" width="18" height="18" /> Folder Locker</h3>
       <p>A Windows desktop application built with C# and .NET. Designed to encrypt, lock, and secure personal directories on the local machine.</p>
       <p>
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
@@ -162,7 +162,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> VietTech E-commerce</h3>
+      <h3><img src="./icons/shopping-cart.svg" width="18" height="18" /> VietTech E-commerce</h3>
       <p>A comprehensive e-commerce website built for the Web Programming final project, featuring product management, cart, and checkout flows.</p>
       <p>
         <img src="https://img.shields.io/badge/Web_Technologies-005C84?style=flat-square" />
@@ -177,7 +177,7 @@
 
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> TickTick App Clone</h3>
+      <h3><img src="./icons/check-circle.svg" width="18" height="18" /> TickTick App Clone</h3>
       <p>A Java-based desktop application inspired by TickTick. A productivity tool for managing daily tasks, creating to-do lists, and tracking habits.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
@@ -190,7 +190,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./icons/folder-git.svg" width="18" height="18" /> Calculator App</h3>
+      <h3><img src="./icons/calculator.svg" width="18" height="18" /> Calculator App</h3>
       <p>A functional, UI-rich Calculator application developed entirely in Java. Features standard arithmetic operations and a clean user interface.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />

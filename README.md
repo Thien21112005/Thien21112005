@@ -1,32 +1,42 @@
 <div align="center">
   <img src="background.jpg" alt="Cover Image" width="100%" />
-</div>
 
-# Hi there, I'm Ngoc Thien! <img src="./icons/wave.svg" width="28" height="28" />
+  <br><br>
 
-<div align="center">
+  <h1>Nguyen Ngoc Thien</h1>
+
+  <p><strong>Software Engineering Student @ HCMUTE • Full-Stack Developer • ML Enthusiast</strong></p>
+
   <a href="https://github.com/Thien21112005">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&duration=3000&pause=1000&color=38B2AC&center=true&vCenter=true&width=600&lines=Software+Engineering+Student+%40+HCMUTE;Full-Stack+Developer;Machine+Learning+Enthusiast" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38B2AC&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;High-Concurrency+Systems;Machine+Learning+Enthusiast;Clean+Architecture+%26+System+Design" alt="Typing SVG" />
   </a>
+
+  <p>
+    <a href="https://www.linkedin.com/in/ngoc-thien-nguyen/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="mailto:thien.nnt.211105@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+    <a href="https://www.facebook.com/nguyen.ngoc.thien.625540"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" /></a>
+    <img src="https://komarev.com/ghpvc/?username=Thien21112005&label=Profile+Views&color=38B2AC&style=flat-square" alt="Thien21112005" />
+  </p>
 </div>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/ngoc-thien-nguyen/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:thien.nnt.211105@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://www.facebook.com/nguyen.ngoc.thien.625540"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" /></a>
-  <img src="https://komarev.com/ghpvc/?username=Thien21112005&label=Profile+Views&color=38B2AC&style=flat-square" alt="Thien21112005" />
-</p>
-
----
-
-## <img src="./icons/user.svg" width="22" height="22" /> About Me
-
-- <img src="./icons/graduation-cap.svg" width="16" height="16" /> **Nguyen Ngoc Thien** — Software Engineering student at **HCMUTE** (Ho Chi Minh City University of Technology and Education).
-- <img src="./icons/code.svg" width="16" height="16" /> Focus: **Full-Stack Developer** & **Software Engineer**.
-- <img src="./icons/brain.svg" width="16" height="16" /> Research Interests: **Machine Learning**, **AI Algorithms** (Heuristic Search), and **Object-Oriented System Design**.
-- <img src="./icons/rocket.svg" width="16" height="16" /> Currently building: High-concurrency systems and high-fidelity, minimalist UIs.
-- <img src="./icons/activity.svg" width="16" height="16" /> Outside of coding: I enjoy playing **Badminton** and **Reading books**.
-- <img src="./icons/mail.svg" width="16" height="16" /> Contact me via Email: **[thien.nnt.211105@gmail.com](mailto:thien.nnt.211105@gmail.com)**
+```typescript
+// engineer.config.ts
+const developer: EngineerProfile = {
+  name: "Nguyen Ngoc Thien",
+  role: "Full-Stack Developer & Software Engineer",
+  education: {
+    institution: "Ho Chi Minh City University of Technology and Education (HCMUTE)",
+    major: "Software Engineering"
+  },
+  architectureFocus: [
+    "High-concurrency systems & distributed locking (Redis Redlock)",
+    "Decoupled micro-architecture & clean code principles",
+    "Heuristic AI algorithms & applied machine learning"
+  ],
+  interests: ["Competitive Badminton", "Technical Literature", "System Design"],
+  contact: "thien.nnt.211105@gmail.com"
+};
+```
 
 ---
 

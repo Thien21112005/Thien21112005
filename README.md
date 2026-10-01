@@ -91,18 +91,6 @@ const developer: EngineerProfile = {
 
 ---
 
-## <img src="./icons/bar-chart.svg" width="22" height="22" /> GitHub Stats
-
-<div align="center">
-  <br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Thien21112005&show_icons=true&theme=tokyonight&hide_border=true" alt="Thien's GitHub stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&theme=tokyonight&hide_border=true" alt="Thien's GitHub Streak" width="48%" />
-  <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Thien21112005&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="60%" />
-</div>
-
----
-
 ## <img src="./icons/rocket.svg" width="22" height="22" /> Flagship Engineering Projects
 
 <table>
@@ -172,6 +160,27 @@ const developer: EngineerProfile = {
 | **VietTech E-commerce** | `Web Tech` `JavaScript` | Full-cycle e-commerce store with catalog & cart | [Explore Repo →](https://github.com/Thien21112005/viettech-ecommerce) |
 | **TickTick App Clone** | `Java` `Desktop` | Productivity task scheduler and habit tracker | [Explore Repo →](https://github.com/Thien21112005/ticktick-app) |
 | **Calculator App** | `Java` `UI` | Multi-mode functional arithmetic calculator | [Explore Repo →](https://github.com/Thien21112005/calculator-app) |
+
+---
+
+## <img src="./icons/bar-chart.svg" width="22" height="22" /> Engineering Activity & Metrics
+
+<div align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Thien21112005&show_icons=true&theme=tokyonight&hide_border=true" alt="Thien's GitHub stats" width="48.5%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&theme=tokyonight&hide_border=true" alt="Thien's GitHub Streak" width="48.5%" />
+  <br><br>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Thien21112005&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="60%" />
+</div>
+
+<br>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
+</div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=11,19,25&height=100&section=footer" />

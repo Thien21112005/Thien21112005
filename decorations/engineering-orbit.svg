@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" fill="none">
+<defs><radialGradient id="core"><stop stop-color="#BBA8FF" stop-opacity=".35"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></radialGradient><filter id="gl"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<ellipse cx="450" cy="194" rx="300" ry="112" stroke="#8B7CF6" stroke-opacity=".35" stroke-dasharray="4 9" transform="rotate(-18 450 194)"/>
+<ellipse cx="450" cy="194" rx="230" ry="150" stroke="#36D9D0" stroke-opacity=".25" stroke-dasharray="2 8" transform="rotate(35 450 194)"/>
+<circle cx="450" cy="194" r="125" fill="url(#core)"/>
+<circle cx="450" cy="194" r="52" fill="#17152F" stroke="#9B83FF" stroke-width="1.5" filter="url(#gl)"/>
+<path d="M450 160L478 176V210L450 226L422 210V176L450 160Z" fill="#8B5CF6" fill-opacity=".25" stroke="#C4B5FD" stroke-width="1.5"/>
+<path d="M438 187L450 180L462 187V201L450 208L438 201V187Z" fill="#50E3D8"/>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="1.4" fill="#D8D5F5">
+  <g><rect x="95" y="72" width="150" height="42" rx="10" fill="#111A31" stroke="#35D9D0" stroke-opacity=".6"/><text x="170" y="98" text-anchor="middle">BACKEND</text><circle cx="112" cy="93" r="4" fill="#35D9D0"/></g>
+  <g><rect x="655" y="65" width="150" height="42" rx="10" fill="#111A31" stroke="#9B83FF" stroke-opacity=".7"/><text x="730" y="91" text-anchor="middle">SYSTEM DESIGN</text><circle cx="672" cy="86" r="4" fill="#9B83FF"/></g>
+  <g><rect x="100" y="270" width="150" height="42" rx="10" fill="#111A31" stroke="#9B83FF" stroke-opacity=".7"/><text x="175" y="296" text-anchor="middle">APPLIED AI</text><circle cx="117" cy="291" r="4" fill="#9B83FF"/></g>
+  <g><rect x="650" y="274" width="150" height="42" rx="10" fill="#111A31" stroke="#35D9D0" stroke-opacity=".6"/><text x="725" y="300" text-anchor="middle">DEVOPS</text><circle cx="667" cy="295" r="4" fill="#35D9D0"/></g>
+</g>
+<g stroke="#8175D9" stroke-opacity=".65" stroke-width="1.2"><path d="M245 93L350 155"/><path d="M655 86L550 154"/><path d="M250 291L360 233"/><path d="M650 295L540 233"/></g>
+<g fill="#5EEADF"><circle cx="350" cy="155" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="2.1s" repeatCount="indefinite"/></circle><circle cx="550" cy="154" r="3"><animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/></circle></g>
+<g fill="#A78BFA"><circle cx="360" cy="233" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" repeatCount="indefinite"/></circle><circle cx="540" cy="233" r="3"><animate attributeName="opacity" values="1;.2;1" dur="2.2s" repeatCount="indefinite"/></circle></g>
+<circle cx="450" cy="194" r="94" stroke="#8B5CF6" stroke-opacity=".4" stroke-dasharray="2 8"><animateTransform attributeName="transform" type="rotate" from="0 450 194" to="360 450 194" dur="35s" repeatCount="indefinite"/></circle>
+</svg>

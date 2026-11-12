@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" viewBox="0 0 760 260" fill="none">
+<defs><linearGradient id="panel" x1="0" y1="0" x2="760" y2="260"><stop stop-color="#11172B"/><stop offset="1" stop-color="#101F2D"/></linearGradient><filter id="soft"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<rect x="1" y="1" width="758" height="258" rx="16" fill="url(#panel)" stroke="#7567C9" stroke-opacity=".65"/>
+<path d="M1 48H759" stroke="#8275D6" stroke-opacity=".35"/>
+<circle cx="25" cy="25" r="5" fill="#FF6B8A"/><circle cx="44" cy="25" r="5" fill="#F5C76A"/><circle cx="63" cy="25" r="5" fill="#50D9C8"/>
+<text x="92" y="30" font-family="monospace" font-size="12" fill="#8996B7">thien@mekong-node: ~/engineering</text>
+<g font-family="monospace" font-size="15">
+<text x="34" y="87" fill="#63E2D7">$</text><text x="55" y="87" fill="#E2E7F5"> whoami</text>
+<text x="34" y="116" fill="#A78BFA">→</text><text x="55" y="116" fill="#D7DDF0"> software_engineer_in_progress</text>
+<text x="34" y="151" fill="#63E2D7">$</text><text x="55" y="151" fill="#E2E7F5"> focus --current</text>
+<text x="34" y="180" fill="#A78BFA">→</text><text x="55" y="180" fill="#D7DDF0"> distributed_systems · backend · applied_ai</text>
+<text x="34" y="215" fill="#63E2D7">$</text><text x="55" y="215" fill="#E2E7F5"> echo "keep building, keep learning"</text>
+<rect x="388" y="202" width="9" height="17" rx="1" fill="#63E2D7"><animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/></rect>
+</g>
+<path d="M650 80L700 80L700 130" stroke="#8B7CF6" stroke-opacity=".4"/><circle cx="700" cy="130" r="3" fill="#8B7CF6"><animate attributeName="r" values="2;5;2" dur="2.3s" repeatCount="indefinite"/></circle>
+</svg>

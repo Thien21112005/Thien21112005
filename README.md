@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="background.jpg" alt="Cover Image" width="100%" />
+  <img src="./decorations/hero-mekong-cyber.svg" alt="Mekong Cyber Banner" width="100%" />
 
   <br><br>
 
@@ -17,6 +17,10 @@
     <a href="https://www.facebook.com/nguyen.ngoc.thien.625540"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" /></a>
     <img src="https://komarev.com/ghpvc/?username=Thien21112005&label=Profile+Views&color=38B2AC&style=flat-square" alt="Thien21112005" />
   </p>
+
+  <br>
+
+  <img src="./decorations/terminal-card.svg" width="90%" alt="Developer terminal card" />
 </div>
 
 ```typescript
@@ -38,9 +42,17 @@ const developer: EngineerProfile = {
 };
 ```
 
----
+<div align="center">
+  <img src="./decorations/river-circuit.svg" width="100%" alt="River circuit divider" />
+</div>
 
 ## <img src="./icons/layers.svg" width="22" height="22" /> Tech Stack & Architectural Ecosystem
+
+<div align="center">
+  <img src="./decorations/engineering-orbit.svg" width="90%" alt="Engineering ecosystem" />
+</div>
+
+<br>
 
 <div align="center">
 
@@ -85,7 +97,9 @@ const developer: EngineerProfile = {
 
 </div>
 
----
+<div align="center">
+  <img src="./decorations/river-circuit.svg" width="100%" alt="River circuit divider" />
+</div>
 
 ## <img src="./icons/rocket.svg" width="22" height="22" /> Flagship Engineering Projects
 
@@ -157,7 +171,9 @@ const developer: EngineerProfile = {
 | **TickTick App Clone** | `Java` `Desktop` | Productivity task scheduler and habit tracker | [Explore Repo →](https://github.com/Thien21112005/ticktick-app) |
 | **Calculator App** | `Java` `UI` | Multi-mode functional arithmetic calculator | [Explore Repo →](https://github.com/Thien21112005/calculator-app) |
 
----
+<div align="center">
+  <img src="./decorations/river-circuit.svg" width="100%" alt="River circuit divider" />
+</div>
 
 ## <img src="./icons/bar-chart.svg" width="22" height="22" /> Engineering Activity & Metrics
 

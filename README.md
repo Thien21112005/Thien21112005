@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./decorations/hero-mekong-cyber.svg" alt="Mekong Cyber Banner" width="100%" />
+  <img src="./decorations/xu-dua-hero.svg" alt="Ký ức người con Xứ Dừa Banner" width="100%" />
 
   <br><br>
 
@@ -20,7 +20,7 @@
 
   <br>
 
-  <img src="./decorations/terminal-card.svg" width="90%" alt="Developer terminal card" />
+  <img src="./decorations/sampan.svg" width="220" alt="Ghe gỗ Bến Tre" />
 </div>
 
 ```typescript
@@ -43,16 +43,10 @@ const developer: EngineerProfile = {
 ```
 
 <div align="center">
-  <img src="./decorations/river-circuit.svg" width="100%" alt="River circuit divider" />
+  <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 
 ## <img src="./icons/layers.svg" width="22" height="22" /> Tech Stack & Architectural Ecosystem
-
-<div align="center">
-  <img src="./decorations/engineering-orbit.svg" width="90%" alt="Engineering ecosystem" />
-</div>
-
-<br>
 
 <div align="center">
 
@@ -98,7 +92,7 @@ const developer: EngineerProfile = {
 </div>
 
 <div align="center">
-  <img src="./decorations/river-circuit.svg" width="100%" alt="River circuit divider" />
+  <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 
 ## <img src="./icons/rocket.svg" width="22" height="22" /> Flagship Engineering Projects
@@ -172,7 +166,7 @@ const developer: EngineerProfile = {
 | **Calculator App** | `Java` `UI` | Multi-mode functional arithmetic calculator | [Explore Repo →](https://github.com/Thien21112005/calculator-app) |
 
 <div align="center">
-  <img src="./decorations/river-circuit.svg" width="100%" alt="River circuit divider" />
+  <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 
 ## <img src="./icons/bar-chart.svg" width="22" height="22" /> Engineering Activity & Metrics

@@ -76,7 +76,7 @@
       </feMerge>
     </filter>
 
-    <!-- Crisp Text Pop Filter -->
+    <!-- Crisp Text Pop Filter (White Glow Halo) -->
     <filter id="textPopGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#FFFFFF" flood-opacity="0.98"/>
       <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#FFFFFF" flood-opacity="0.8"/>
@@ -105,30 +105,25 @@
     </g>
   </g>
 
-  <!-- ========================================================= -->
-  <!-- ĐÀN CÒ TRẮNG BAY Ở GÓC TRÊN BÊN PHẢI (HOÀN TOÀN KHÔNG BỊ CHE) -->
-  <!-- ========================================================= -->
-  <g id="dan-co-tren-troi" transform="translate(1000, 35)" opacity=".95">
-    <!-- Stork 1 (Lead) -->
-    <g transform="translate(40, 20) scale(0.95)">
-      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.6">
+  <!-- Flock of White Storks in Flight -->
+  <g opacity=".92">
+    <g transform="translate(690, 85) scale(0.9)">
+      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.6">
         <animate attributeName="d" dur="1.3s" repeatCount="indefinite"
           values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
                   M0,0 Q12,12 24,18 Q12,6 0,0 Q-12,6 -24,18 Q-12,12 0,0;
                   M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
       </path>
     </g>
-    <!-- Stork 2 -->
-    <g transform="translate(90, 38) scale(0.78)">
-      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5">
+    <g transform="translate(740, 100) scale(0.75)">
+      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.5">
         <animate attributeName="d" dur="1.25s" begin="0.25s" repeatCount="indefinite"
           values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
                   M0,0 Q12,12 24,18 Q12,6 0,0 Q-12,6 -24,18 Q-12,12 0,0;
                   M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
       </path>
     </g>
-    <!-- Stork 3 -->
-    <g transform="translate(0, 48) scale(0.72)">
+    <g transform="translate(650, 108) scale(0.7)">
       <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF">
         <animate attributeName="d" dur="1.4s" begin="0.5s" repeatCount="indefinite"
           values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
@@ -136,8 +131,7 @@
                   M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
       </path>
     </g>
-    <!-- Stork 4 -->
-    <g transform="translate(130, 60) scale(0.62)">
+    <g transform="translate(785, 120) scale(0.6)">
       <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF">
         <animate attributeName="d" dur="1.35s" begin="0.7s" repeatCount="indefinite"
           values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
@@ -162,7 +156,7 @@
   <!-- ============================================== -->
   <path d="M0,238 C180,226 360,245 560,234 C760,224 960,240 1200,230 L1200,420 L0,420 Z" fill="url(#riverGreen)"/>
 
-  <!-- Sunlight Shimmer on River Waters (Smooth Soft Shimmer, No Dashes) -->
+  <!-- Sunlight Shimmer on River Waters -->
   <g opacity=".85">
     <path d="M700,235 L860,235 L920,420 L640,420 Z" fill="url(#waterSparkle)"/>
     <g stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity=".65">
@@ -193,61 +187,52 @@
   </g>
 
   <!-- ========================================================= -->
-  <!-- ĐÀN VỊT LỘI NƯỚC TRÊN SÔNG (SWIMMING FLOCK OF DUCKS)      -->
+  <!-- TRÁI DỪA KHÔ TRÔI SÔNG (ĐẦU CÓ ĐÚNG 3 MẮT DỪA / 3 LỖ TRÒN)-->
   <!-- ========================================================= -->
-  <g transform="translate(550, 285)">
+  <!-- Trái dừa khô 1 (Giữa sông) -->
+  <g id="trai-dua-kho-1" transform="translate(615, 340)">
     <animateTransform attributeName="transform" type="translate"
-      values="550,285; 552,282; 550,285" dur="4.2s" repeatCount="indefinite"/>
-    <!-- Lead Duck (Vịt mẹ) -->
-    <g transform="translate(0, 0)">
-      <ellipse cx="6" cy="11" rx="18" ry="4" fill="none" stroke="#CCFBF1" stroke-width="1.2" opacity=".7"/>
-      <path d="M-12,7 C-14,1 -6,-3 2,-3 C14,-3 22,1 24,6 C20,11 2,12 -12,7 Z" fill="#FFFFFF"/>
-      <path d="M-6,3 C0,-1 8,0 14,4 C10,6 2,7 -6,3 Z" fill="#E2E8F0" opacity=".7"/>
-      <polygon points="-12,7 -17,3 -10,4" fill="#FFFFFF"/>
-      <path d="M12,3 C14,-5 16,-9 20,-11 C24,-11 26,-8 25,-5 C22,-1 18,4 15,6 Z" fill="#FFFFFF"/>
-      <circle cx="21" cy="-8" r="3.5" fill="#FFFFFF"/>
-      <circle cx="22.5" cy="-8.5" r="0.9" fill="#0F172A"/>
-      <polygon points="24,-8 30,-6 24,-5" fill="#F97316"/>
-    </g>
-    <!-- Duckling 1 -->
-    <g transform="translate(-24, 7) scale(0.68)">
-      <ellipse cx="6" cy="11" rx="14" ry="3.5" fill="none" stroke="#CCFBF1" stroke-width="1.2" opacity=".6"/>
-      <path d="M-12,7 C-14,1 -6,-3 2,-3 C14,-3 22,1 24,6 C20,11 2,12 -12,7 Z" fill="#FEF08A"/>
-      <circle cx="21" cy="-8" r="3.5" fill="#FEF08A"/>
-      <circle cx="22.5" cy="-8.5" r="0.8" fill="#0F172A"/>
-      <polygon points="24,-8 30,-6 24,-5" fill="#F97316"/>
-    </g>
-    <!-- Duckling 2 -->
-    <g transform="translate(-44, 13) scale(0.6)">
-      <ellipse cx="6" cy="11" rx="14" ry="3.5" fill="none" stroke="#CCFBF1" stroke-width="1.2" opacity=".6"/>
-      <path d="M-12,7 C-14,1 -6,-3 2,-3 C14,-3 22,1 24,6 C20,11 2,12 -12,7 Z" fill="#FEF08A"/>
-      <circle cx="21" cy="-8" r="3.5" fill="#FEF08A"/>
-      <circle cx="22.5" cy="-8.5" r="0.8" fill="#0F172A"/>
-      <polygon points="24,-8 30,-6 24,-5" fill="#F97316"/>
-    </g>
-  </g>
-
-  <!-- ========================================================= -->
-  <!-- TRÁI DỪA KHÔ TRÔI SÔNG (3 MẮT DỪA / LỖ MẦM ĐẶC TRƯNG)     -->
-  <!-- ========================================================= -->
-  <g id="trai-dua-kho-1" transform="translate(620, 340)">
-    <animateTransform attributeName="transform" type="translate"
-      values="620,340; 622,344; 620,340" dur="3.8s" repeatCount="indefinite"/>
+      values="615,340; 617,344; 615,340" dur="3.8s" repeatCount="indefinite"/>
+    <!-- Water wake around coconut -->
     <ellipse cx="0" cy="6" rx="17" ry="5" fill="none" stroke="#CCFBF1" stroke-width="1.4" opacity=".75"/>
+    <!-- Coconut fibrous body -->
     <path d="M-13,-2 C-14,8 -8,15 0,16 C8,15 14,8 13,-2 C12,-11 6,-15 0,-15 C-6,-15 -12,-11 -13,-2 Z"
       fill="url(#dryCoconutGrad)"/>
+    <!-- Fibrous Coir Streaks -->
     <path d="M-9,2 Q-4,10 0,14 M9,2 Q4,10 0,14 M-6,-10 Q-8,-2 -8,6 M6,-10 Q8,-2 8,6"
       stroke="#5C3518" stroke-width="0.8" fill="none" opacity=".65"/>
     
-    <!-- 3 Mắt Dừa -->
+    <!-- 3 MẮT DỪA / 3 LỖ MẦM ĐẶC TRƯNG HÌNH TAM GIÁC TRÊN ĐẦU -->
     <g transform="translate(0, -6)">
+      <!-- Sockets / indented rims -->
       <circle cx="-3.5" cy="-2.5" r="2.2" fill="#3D200E"/>
       <circle cx="3.5" cy="-2.5" r="2.2" fill="#3D200E"/>
       <circle cx="0" cy="3" r="2.5" fill="#3D200E"/>
+      <!-- Deep dark eyes -->
       <circle cx="-3.5" cy="-2.5" r="1.5" fill="#1C0E06"/>
       <circle cx="3.5" cy="-2.5" r="1.5" fill="#1C0E06"/>
       <circle cx="0" cy="3" r="1.7" fill="#1C0E06"/>
+      <!-- Soft rim highlight -->
       <path d="M-5,-4 Q-3.5,-5 -2,-4 M2,-4 Q3.5,-5 5,-4" stroke="#E2B185" stroke-width="0.6" fill="none" opacity=".8"/>
+    </g>
+  </g>
+
+  <!-- Trái dừa khô 2 (Gần cầu khỉ) -->
+  <g id="trai-dua-kho-2" transform="translate(930, 355)">
+    <animateTransform attributeName="transform" type="translate"
+      values="930,355; 932,359; 930,355" dur="4.2s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="5" rx="15" ry="4.5" fill="none" stroke="#CCFBF1" stroke-width="1.2" opacity=".7"/>
+    <path d="M-11,-2 C-12,7 -7,13 0,14 C7,13 12,7 11,-2 C10,-10 5,-13 0,-13 C-5,-13 -10,-10 -11,-2 Z"
+      fill="url(#dryCoconutGrad)"/>
+    <path d="M-7,2 Q-3,8 0,12 M7,2 Q3,8 0,12" stroke="#5C3518" stroke-width="0.7" fill="none" opacity=".6"/>
+    <!-- 3 Mắt Dừa -->
+    <g transform="translate(0, -5)">
+      <circle cx="-3" cy="-2" r="1.8" fill="#3D200E"/>
+      <circle cx="3" cy="-2" r="1.8" fill="#3D200E"/>
+      <circle cx="0" cy="2.5" r="2" fill="#3D200E"/>
+      <circle cx="-3" cy="-2" r="1.2" fill="#1C0E06"/>
+      <circle cx="3" cy="-2" r="1.2" fill="#1C0E06"/>
+      <circle cx="0" cy="2.5" r="1.3" fill="#1C0E06"/>
     </g>
   </g>
 
@@ -266,9 +251,11 @@
     <line x1="140" y1="0" x2="141" y2="55" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
     <line x1="220" y1="-4" x2="221" y2="52" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
 
+    <!-- Bamboo Footway -->
     <path d="M0,60 C75,45 150,42 225,40 C280,39 335,42 390,48" stroke="#FDE68A" stroke-width="8" stroke-linecap="round"/>
     <path d="M0,62 C75,47 150,44 225,42 C280,41 335,44 390,50" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
 
+    <!-- Bamboo Handrail -->
     <path d="M15,18 C90,8 165,4 240,2 C295,2 350,6 395,12" stroke="#FEF08A" stroke-width="4.5" stroke-linecap="round"/>
     <path d="M15,20 C90,10 165,6 240,4 C295,4 350,8 395,14" stroke="#B45309" stroke-width="1.8" stroke-linecap="round"/>
 
@@ -284,6 +271,7 @@
       <circle cx="-2" cy="9" r="1.8" fill="#FDE047"/>
     </g>
 
+    <!-- Water ripples around stilts -->
     <ellipse cx="61" cy="113" rx="15" ry="3.5" fill="none" stroke="#CCFBF1" stroke-width="1.5" opacity=".7"/>
     <ellipse cx="141" cy="118" rx="16" ry="4" fill="none" stroke="#CCFBF1" stroke-width="1.5" opacity=".7"/>
     <ellipse cx="220" cy="120" rx="15" ry="4" fill="none" stroke="#CCFBF1" stroke-width="1.5" opacity=".7"/>
@@ -372,90 +360,35 @@
   </g>
 
   <!-- ============================================== -->
-  <!-- ĐÁM LỤC BÌNH HOA TÍM TRÔI SÔNG (HYACINTH RAFTS)-->
+  <!-- KHÓM HOA LỤC BÌNH TÍM BIẾC                     -->
   <!-- ============================================== -->
-  <g transform="translate(245, 345)">
+  <g transform="translate(250, 345)">
     <animateTransform attributeName="transform" type="translate"
-      values="245,345; 248,348; 245,345" dur="4.8s" repeatCount="indefinite"/>
-    <!-- Water wake -->
-    <ellipse cx="0" cy="8" rx="36" ry="10" fill="none" stroke="#CCFBF1" stroke-width="1.2" opacity=".6"/>
-    <!-- Dense cluster of bulbous green leaves -->
-    <!-- Lower back leaves -->
-    <ellipse cx="-20" cy="4" rx="14" ry="8" fill="#14532D"/>
-    <ellipse cx="20" cy="5" rx="15" ry="8.5" fill="#14532D"/>
-    <ellipse cx="-8" cy="8" rx="16" ry="9" fill="#166534"/>
-    <ellipse cx="10" cy="9" rx="15" ry="8.5" fill="#166534"/>
-    <!-- Mid vibrant leaves with bulbous shape -->
-    <ellipse cx="-16" cy="0" rx="13" ry="7" fill="#15803D"/>
-    <ellipse cx="15" cy="1" rx="14" ry="7.5" fill="#15803D"/>
-    <ellipse cx="0" cy="4" rx="14" ry="8" fill="#16A34A"/>
-    <ellipse cx="-6" cy="-4" rx="12" ry="6.5" fill="#22C55E"/>
-    <ellipse cx="8" cy="-3" rx="13" ry="7" fill="#22C55E"/>
-
-    <!-- Flower Spike 1 (Center-Left) -->
-    <g transform="translate(-8, -14)">
-      <!-- Petals -->
+      values="250,345; 255,348; 250,345" dur="4.8s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#15803D"/>
+    <ellipse cx="-13" cy="3" rx="11" ry="6" fill="#16A34A"/>
+    <ellipse cx="13" cy="4" rx="12" ry="7" fill="#166534"/>
+    <g transform="translate(0, -11)">
       <ellipse cx="0" cy="-6" rx="6" ry="9" fill="#C084FC"/>
       <ellipse cx="-7" cy="-2" rx="8" ry="6" fill="#A855F7"/>
       <ellipse cx="7" cy="-2" rx="8" ry="6" fill="#A855F7"/>
-      <ellipse cx="-5" cy="4" rx="7" ry="5.5" fill="#9333EA"/>
-      <ellipse cx="5" cy="4" rx="7" ry="5.5" fill="#9333EA"/>
-      <ellipse cx="0" cy="5" rx="6.5" ry="6.5" fill="#7E22CE"/>
-      <!-- Honey eye / teardrop on center petal -->
+      <ellipse cx="0" cy="2" rx="7" ry="7" fill="#9333EA"/>
       <ellipse cx="0" cy="-7" rx="2.5" ry="3.5" fill="#FDE047"/>
-      <circle cx="0" cy="-7" r="1.3" fill="#581C87"/>
-    </g>
-
-    <!-- Flower Spike 2 (Center-Right, smaller) -->
-    <g transform="translate(10, -11) scale(0.85)">
-      <ellipse cx="0" cy="-5" rx="5.5" ry="8" fill="#C084FC"/>
-      <ellipse cx="-6" cy="-2" rx="7" ry="5" fill="#A855F7"/>
-      <ellipse cx="6" cy="-2" rx="7" ry="5" fill="#A855F7"/>
-      <ellipse cx="0" cy="4" rx="6" ry="6" fill="#9333EA"/>
-      <ellipse cx="0" cy="-6" rx="2.2" ry="3" fill="#FDE047"/>
-      <circle cx="0" cy="-6" r="1.2" fill="#581C87"/>
+      <circle cx="0" cy="-7" r="1.2" fill="#581C87"/>
     </g>
   </g>
-  <g transform="translate(735, 360)">
+
+  <g transform="translate(730, 360)">
     <animateTransform attributeName="transform" type="translate"
-      values="735,360; 738,363; 735,360" dur="4.2s" repeatCount="indefinite"/>
-    <!-- Water wake -->
-    <ellipse cx="0" cy="8" rx="36" ry="10" fill="none" stroke="#CCFBF1" stroke-width="1.2" opacity=".6"/>
-    <!-- Dense cluster of bulbous green leaves -->
-    <!-- Lower back leaves -->
-    <ellipse cx="-20" cy="4" rx="14" ry="8" fill="#14532D"/>
-    <ellipse cx="20" cy="5" rx="15" ry="8.5" fill="#14532D"/>
-    <ellipse cx="-8" cy="8" rx="16" ry="9" fill="#166534"/>
-    <ellipse cx="10" cy="9" rx="15" ry="8.5" fill="#166534"/>
-    <!-- Mid vibrant leaves with bulbous shape -->
-    <ellipse cx="-16" cy="0" rx="13" ry="7" fill="#15803D"/>
-    <ellipse cx="15" cy="1" rx="14" ry="7.5" fill="#15803D"/>
-    <ellipse cx="0" cy="4" rx="14" ry="8" fill="#16A34A"/>
-    <ellipse cx="-6" cy="-4" rx="12" ry="6.5" fill="#22C55E"/>
-    <ellipse cx="8" cy="-3" rx="13" ry="7" fill="#22C55E"/>
-
-    <!-- Flower Spike 1 (Center-Left) -->
-    <g transform="translate(-8, -14)">
-      <!-- Petals -->
-      <ellipse cx="0" cy="-6" rx="6" ry="9" fill="#C084FC"/>
-      <ellipse cx="-7" cy="-2" rx="8" ry="6" fill="#A855F7"/>
-      <ellipse cx="7" cy="-2" rx="8" ry="6" fill="#A855F7"/>
-      <ellipse cx="-5" cy="4" rx="7" ry="5.5" fill="#9333EA"/>
-      <ellipse cx="5" cy="4" rx="7" ry="5.5" fill="#9333EA"/>
-      <ellipse cx="0" cy="5" rx="6.5" ry="6.5" fill="#7E22CE"/>
-      <!-- Honey eye / teardrop on center petal -->
-      <ellipse cx="0" cy="-7" rx="2.5" ry="3.5" fill="#FDE047"/>
-      <circle cx="0" cy="-7" r="1.3" fill="#581C87"/>
-    </g>
-
-    <!-- Flower Spike 2 (Center-Right, smaller) -->
-    <g transform="translate(10, -11) scale(0.85)">
-      <ellipse cx="0" cy="-5" rx="5.5" ry="8" fill="#C084FC"/>
+      values="730,360; 725,363; 730,360" dur="4.2s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="15" ry="8" fill="#15803D"/>
+    <ellipse cx="-13" cy="2" rx="11" ry="6" fill="#16A34A"/>
+    <ellipse cx="13" cy="3" rx="12" ry="7" fill="#166534"/>
+    <g transform="translate(2, -10)">
+      <ellipse cx="0" cy="-5" rx="5" ry="8" fill="#C084FC"/>
       <ellipse cx="-6" cy="-2" rx="7" ry="5" fill="#A855F7"/>
       <ellipse cx="6" cy="-2" rx="7" ry="5" fill="#A855F7"/>
-      <ellipse cx="0" cy="4" rx="6" ry="6" fill="#9333EA"/>
-      <ellipse cx="0" cy="-6" rx="2.2" ry="3" fill="#FDE047"/>
-      <circle cx="0" cy="-6" r="1.2" fill="#581C87"/>
+      <circle cx="0" cy="-6" r="2" fill="#FDE047"/>
     </g>
   </g>
 
@@ -1145,24 +1078,29 @@
 
   <!-- ========================================================= -->
   <!-- TYPOGRAPHY NỔI BẬT RỰC RỠ TRÊN NỀN BẦU TRỜI               -->
+  <!-- (ĐÃ LÀM NỔI BẬT: ĐẬM ĐÀ, BÓNG SÁNG, CANH GIỮA HOÀN HẢO)   -->
   <!-- ========================================================= -->
   <g transform="translate(565, 52)">
+    <!-- Soft luminous sunbeam backdrop directly behind text -->
     <ellipse cx="0" cy="35" rx="230" ry="46" fill="#FFFFFF" opacity=".72" filter="url(#cloudSoft)"/>
     <ellipse cx="0" cy="35" rx="180" ry="32" fill="#FEF9C3" opacity=".5" filter="url(#cloudSoft)"/>
 
+    <!-- Primary Title: KÝ ỨC NGƯỜI CON XỨ DỪA (Nổi bật, sắc nét, có filter textPopGlow) -->
     <text x="0" y="28" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-size="22" letter-spacing="6" fill="#044334" font-weight="900" filter="url(#textPopGlow)">
       KÝ ỨC NGƯỜI CON XỨ DỪA
     </text>
     
+    <!-- Subtitle: Code from the Mekong (Chữ lớn, đậm đà, nổi bật) -->
     <text x="0" y="66" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-size="33" font-weight="bold" font-style="italic" letter-spacing="1.5" fill="#0F766E" filter="url(#textPopGlow)">
       Code from the Mekong
     </text>
     
+    <!-- Warm golden underline ornament -->
     <path d="M -160,78 Q 0,86 160,78" stroke="#D97706" stroke-width="2" stroke-linecap="round" fill="none" opacity=".85"/>
     <circle cx="0" cy="82" r="3" fill="#D97706"/>
   </g>
 
-  <!-- DÒNG CHỮ Ở CHÂN ẢNH -->
+  <!-- DÒNG CHỮ Ở CHÂN ẢNH (RÕ NÉT TRÊN MẶT NƯỚC SÂU) -->
   <text x="600" y="405" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="4.5" fill="#F0FDFA" font-weight="bold" filter="url(#textPopGlow)">
     BẾN TRE  •  VIỆT NAM  •  SOFTWARE ENGINEERING
   </text>

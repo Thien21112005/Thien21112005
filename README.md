@@ -20,7 +20,7 @@
 
   <br>
 
-  <img src="./decorations/sampan.svg" width="220" alt="Ghe gỗ Bến Tre" />
+  <img src="./decorations/sampan.svg" width="260" alt="Xuồng ba lá Bến Tre" />
 </div>
 
 ```typescript

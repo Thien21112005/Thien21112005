@@ -1,48 +1,553 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" fill="none">
-<defs>
- <linearGradient id="sky" x1="600" y1="0" x2="600" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#F6D7A0"/><stop offset=".48" stop-color="#EBAF83"/><stop offset="1" stop-color="#8BC4B7"/></linearGradient>
- <linearGradient id="water" x1="0" y1="230" x2="1200" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#4D9B91"/><stop offset=".48" stop-color="#347F7D"/><stop offset="1" stop-color="#225D66"/></linearGradient>
- <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1C8"/><stop offset="1" stop-color="#EFAF73"/></linearGradient>
- <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
- <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="grain" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="8" cy="12" r=".8" fill="#FFF" opacity=".18"/><circle cx="52" cy="44" r=".7" fill="#FFF" opacity=".15"/><circle cx="25" cy="68" r=".6" fill="#243F3A" opacity=".12"/></pattern>
-</defs>
-<rect width="1200" height="390" rx="22" fill="url(#sky)"/>
-<circle cx="610" cy="128" r="83" fill="#FFE8B8" opacity=".35" filter="url(#blur)"/><circle cx="610" cy="128" r="53" fill="url(#sun)"/>
-<!-- distant delta banks -->
-<path d="M0 205C120 174 212 191 322 205C430 219 510 191 620 202C755 216 830 177 950 194C1060 210 1120 183 1200 190V275H0V205Z" fill="#789D78" opacity=".72"/>
-<path d="M0 231C115 207 215 218 325 231C445 246 530 217 650 228C770 239 880 210 990 222C1080 231 1140 218 1200 220V290H0V231Z" fill="#547E68"/>
-<!-- far houses -->
-<g opacity=".78" fill="#765E4D"><path d="M830 204l36-25 39 25v24h-75z"/><path d="M918 214l29-20 31 20v18h-60z"/><path d="M1040 206l34-23 36 23v24h-70z"/></g>
-<g stroke="#F1D3A1" stroke-width="3" opacity=".65"><path d="M842 215h53M929 222h42M1050 216h49"/></g>
-<!-- river -->
-<path d="M0 254C160 229 255 270 402 253C548 236 662 259 797 247C949 233 1060 260 1200 239V390H0V254Z" fill="url(#water)"/>
-<path d="M0 279C165 252 258 294 411 275C557 257 668 283 810 266C960 249 1081 282 1200 260" stroke="#A7D4BD" stroke-opacity=".4" stroke-width="2"/>
-<g stroke="#C2E0C9" stroke-linecap="round" opacity=".42"><path d="M90 315q48-9 95 0"/><path d="M230 345q35-7 78 0"/><path d="M880 312q54-10 106 0"/><path d="M1010 354q48-8 90 0"/><path d="M500 326q42-7 85 0"/></g>
-<!-- coconut tree left -->
-<g stroke-linecap="round" stroke-linejoin="round">
- <path d="M112 290C130 223 127 153 151 77" stroke="#76523B" stroke-width="17"/><path d="M111 290C129 222 126 155 150 80" stroke="#B17B4F" stroke-width="5" opacity=".7"/>
- <g fill="none" stroke="#315F49" stroke-width="11"><path d="M150 83C93 31 38 41 20 67C67 58 108 76 150 83Z"/><path d="M150 83C100 4 75 3 57 8C85 31 115 58 150 83Z"/><path d="M150 83C153 14 187 0 208 8C186 31 170 56 150 83Z"/><path d="M150 83C211 34 253 47 264 69C218 58 182 74 150 83Z"/><path d="M150 83C220 88 242 119 236 140C208 112 179 98 150 83Z"/><path d="M150 83C106 104 92 139 101 158C118 123 135 101 150 83Z"/></g>
- <g fill="#6E9A62" opacity=".9"><path d="M150 83C93 31 38 41 20 67C71 53 110 76 150 83Z"/><path d="M150 83C100 4 75 3 57 8C92 31 123 64 150 83Z"/><path d="M150 83C211 34 253 47 264 69C214 60 181 77 150 83Z"/></g>
- <g fill="#8C603E"><ellipse cx="144" cy="91" rx="9" ry="12"/><ellipse cx="158" cy="91" rx="8" ry="11"/><ellipse cx="151" cy="101" rx="8" ry="10"/></g>
-</g>
-<!-- coconut tree right -->
-<g stroke-linecap="round" stroke-linejoin="round" transform="translate(1200 0) scale(-1 1)">
- <path d="M104 294C121 226 121 163 143 91" stroke="#76523B" stroke-width="16"/><path d="M143 94C84 43 36 51 19 75C65 67 107 87 143 94Z" fill="#477A54" stroke="#315F49" stroke-width="10"/><path d="M143 94C111 14 82 9 62 14C91 39 119 73 143 94Z" fill="#6E9A62" stroke="#315F49" stroke-width="10"/><path d="M143 94C165 24 202 17 220 27C188 49 164 77 143 94Z" fill="#477A54" stroke="#315F49" stroke-width="10"/><path d="M143 94C207 55 246 68 257 90C211 78 178 91 143 94Z" fill="#6E9A62" stroke="#315F49" stroke-width="10"/><path d="M143 94C207 108 225 141 215 159C192 126 165 107 143 94Z" fill="#477A54" stroke="#315F49" stroke-width="10"/><ellipse cx="140" cy="103" rx="9" ry="11" fill="#8C603E"/>
-</g>
-<!-- nipa / grasses foreground -->
-<g fill="#234F46"><path d="M0 294q35-43 72-36q-36 11-53 43q42-34 80-24q-47 14-62 48H0z"/><path d="M1200 292q-36-42-73-35q35 11 53 43q-42-34-80-24q47 14 62 48h38z"/></g>
-<!-- small wooden sampan -->
-<g transform="translate(492 245)">
- <path d="M0 18Q89 34 180 17L160 43Q91 58 22 42Z" fill="#704A35" stroke="#E4B47B" stroke-width="2"/><path d="M19 25Q89 39 165 24" stroke="#D9A36B" stroke-width="2"/><path d="M88 15L88 -18" stroke="#6E4B37" stroke-width="4"/><path d="M91 -16Q125 -8 139 12L91 12Z" fill="#D9C49A" stroke="#8A7153" stroke-width="2"/><path d="M88 -16Q66 -7 49 12L88 12Z" fill="#EAD7AF" stroke="#8A7153" stroke-width="2"/><circle cx="76" cy="7" r="5" fill="#493C31"/><path d="M72 13l-7 7m12-7l8 8" stroke="#493C31" stroke-width="3" stroke-linecap="round"/>
- <animateTransform attributeName="transform" type="translate" values="492 245;498 242;492 245" dur="6s" repeatCount="indefinite"/>
-</g>
-<!-- gentle ripples -->
-<g stroke="#C5E7D8" stroke-width="1.6" opacity=".65" stroke-linecap="round"><path d="M455 307q42-7 83 0"><animate attributeName="opacity" values=".2;.8;.2" dur="4s" repeatCount="indefinite"/></path><path d="M610 291q34-5 68 0"><animate attributeName="opacity" values=".7;.2;.7" dur="5s" repeatCount="indefinite"/></path></g>
-<!-- fireflies / subtle data lights -->
-<g fill="#FFF1B8" filter="url(#glow)"><circle cx="355" cy="165" r="2.5"><animate attributeName="opacity" values=".1;1;.1" dur="3s" repeatCount="indefinite"/></circle><circle cx="785" cy="184" r="2"><animate attributeName="opacity" values="1;.15;1" dur="3.8s" repeatCount="indefinite"/></circle><circle cx="930" cy="145" r="2.5"><animate attributeName="opacity" values=".2;1;.2" dur="4.2s" repeatCount="indefinite"/></circle></g>
-<!-- title plaque -->
-<g><rect x="325" y="36" width="550" height="108" rx="16" fill="#173C3B" fill-opacity=".82" stroke="#F5D9A8" stroke-opacity=".75"/><text x="600" y="78" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="5" fill="#E8D5AE">KÍ ỨC NGƯỜI CON XỨ DỪA</text><text x="600" y="119" text-anchor="middle" font-family="Georgia,serif" font-size="35" font-weight="bold" fill="#FFF1D4">Code from the Mekong</text></g>
-<rect width="1200" height="390" rx="22" fill="url(#grain)"/>
-<text x="600" y="372" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing="3" fill="#E3E8D4" opacity=".8">BẾN TRE  •  VIỆT NAM  •  SOFTWARE ENGINEERING</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" fill="none">
+  <defs>
+    <!-- Sky & Atmosphere Gradients -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1124"/>
+      <stop offset="28%" stop-color="#3C1A33"/>
+      <stop offset="52%" stop-color="#7A3140"/>
+      <stop offset="72%" stop-color="#BD5640"/>
+      <stop offset="88%" stop-color="#E7884E"/>
+      <stop offset="100%" stop-color="#FCD588"/>
+    </linearGradient>
+
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFBE6"/>
+      <stop offset="45%" stop-color="#FFE28A"/>
+      <stop offset="100%" stop-color="#FF9E43"/>
+    </linearGradient>
+
+    <!-- River Water (Alluvial Mekong) Gradients -->
+    <linearGradient id="riverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CF9657"/>
+      <stop offset="20%" stop-color="#B2743F"/>
+      <stop offset="55%" stop-color="#7F4F2B"/>
+      <stop offset="100%" stop-color="#4C2D18"/>
+    </linearGradient>
+
+    <linearGradient id="sunReflection" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFDE82" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FFE79A" stop-opacity=".45"/>
+      <stop offset="50%" stop-color="#FFF4CD" stop-opacity=".75"/>
+      <stop offset="70%" stop-color="#FFE79A" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#FFDE82" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Wood & Flora Gradients -->
+    <linearGradient id="trunkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4A3022"/>
+      <stop offset="40%" stop-color="#7A5237"/>
+      <stop offset="75%" stop-color="#9C6B49"/>
+      <stop offset="100%" stop-color="#43291B"/>
+    </linearGradient>
+
+    <linearGradient id="coconutGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9AC458"/>
+      <stop offset="50%" stop-color="#649132"/>
+      <stop offset="100%" stop-color="#385419"/>
+    </linearGradient>
+
+    <linearGradient id="xuangrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8C5C38"/>
+      <stop offset="50%" stop-color="#6B4124"/>
+      <stop offset="100%" stop-color="#422413"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="sunGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="gentleGlow">
+      <feGaussianBlur stdDeviation="4" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas with Rounded Corner Frame -->
+  <rect width="1200" height="420" rx="20" fill="url(#skyGrad)"/>
+
+  <!-- Distant Clouds / Haze -->
+  <g opacity=".35">
+    <ellipse cx="280" cy="190" rx="220" ry="24" fill="#FCE5B0"/>
+    <ellipse cx="780" cy="180" rx="280" ry="28" fill="#FCE5B0"/>
+    <ellipse cx="980" cy="200" rx="180" ry="18" fill="#F7B283"/>
+    <ellipse cx="140" cy="210" rx="140" ry="16" fill="#F7B283"/>
+  </g>
+
+  <!-- Setting Sun & Corona -->
+  <circle cx="620" cy="195" r="95" fill="#FFEBB0" opacity=".25" filter="url(#sunGlow)"/>
+  <circle cx="620" cy="195" r="58" fill="url(#sunGrad)" filter="url(#gentleGlow)"/>
+
+  <!-- Flock of Storks (Đàn cò trắng bay về tổ trong ráng chiều) -->
+  <g opacity=".88">
+    <!-- Stork 1 (Lead) -->
+    <g transform="translate(480, 105) scale(0.95)">
+      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFFFFF">
+        <animate attributeName="d" dur="1.4s" repeatCount="indefinite"
+          values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
+                  M0,0 Q12,12 24,18 Q12,6 0,0 Q-12,6 -24,18 Q-12,12 0,0;
+                  M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
+      </path>
+    </g>
+    <!-- Stork 2 -->
+    <g transform="translate(525, 120) scale(0.8)">
+      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFF8F0">
+        <animate attributeName="d" dur="1.3s" begin="0.2s" repeatCount="indefinite"
+          values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
+                  M0,0 Q12,12 24,18 Q12,6 0,0 Q-12,6 -24,18 Q-12,12 0,0;
+                  M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
+      </path>
+    </g>
+    <!-- Stork 3 -->
+    <g transform="translate(440, 128) scale(0.75)">
+      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFF8F0">
+        <animate attributeName="d" dur="1.5s" begin="0.5s" repeatCount="indefinite"
+          values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
+                  M0,0 Q12,12 24,18 Q12,6 0,0 Q-12,6 -24,18 Q-12,12 0,0;
+                  M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
+      </path>
+    </g>
+    <!-- Stork 4 (Distant) -->
+    <g transform="translate(565, 140) scale(0.6)">
+      <path d="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0" fill="#FFEFE0">
+        <animate attributeName="d" dur="1.35s" begin="0.7s" repeatCount="indefinite"
+          values="M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0;
+                  M0,0 Q12,12 24,18 Q12,6 0,0 Q-12,6 -24,18 Q-12,12 0,0;
+                  M0,0 Q12,-16 26,-4 Q14,-4 0,0 Q-14,-4 -26,-4 Q-12,-16 0,0"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Far Riverside Silhouette Layer 1 (Xứ Dừa xa xăm) -->
+  <path d="M0,230 Q120,212 240,225 T480,224 T720,228 T960,220 T1200,226 L1200,265 L0,265 Z" fill="#6A4143" opacity=".6"/>
+  <!-- Far Coconut Frond silhouettes on horizon -->
+  <g fill="#4E2B35" opacity=".55">
+    <path d="M180,225 Q160,200 135,205 Q155,214 180,225 Q195,198 215,204 Q198,215 180,225 Z"/>
+    <path d="M310,224 Q290,195 265,200 Q285,210 310,224 Q325,196 345,202 Q328,214 310,224 Z"/>
+    <path d="M780,227 Q760,196 735,202 Q755,212 780,227 Q798,198 820,203 Q800,216 780,227 Z"/>
+    <path d="M920,222 Q900,194 875,199 Q895,210 920,222 Q938,195 960,201 Q940,213 920,222 Z"/>
+    <!-- Distant thatch cottages (Nhà lá ven sông) -->
+    <path d="M410,224 L422,212 L435,224 Z M420,224 L420,217 L426,217 L426,224 Z"/>
+    <path d="M850,225 L865,210 L880,225 Z M862,225 L862,216 L869,216 L869,225 Z"/>
+  </g>
+
+  <!-- Mid Riverside Bank Layer 2 (Bờ sông phù sa cận cảnh) -->
+  <path d="M0,248 C160,232 290,256 460,244 C630,234 780,250 960,238 C1070,230 1140,240 1200,242 L1200,420 L0,420 Z" fill="url(#riverGrad)"/>
+
+  <!-- Sun Golden Reflection Shimmering on Water -->
+  <g>
+    <path d="M570,244 L670,244 L720,420 L520,420 Z" fill="url(#sunReflection)" opacity=".75"/>
+    <!-- Animated Light Ripples on Water Reflection -->
+    <g stroke="#FFF0B0" stroke-width="2" stroke-linecap="round" opacity=".6">
+      <path d="M590,256 Q620,253 650,256">
+        <animate attributeName="opacity" values=".2;.9;.2" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M575,274 Q620,270 665,274">
+        <animate attributeName="opacity" values=".8;.2;.8" dur="2.7s" repeatCount="indefinite"/>
+      </path>
+      <path d="M555,296 Q620,291 685,296">
+        <animate attributeName="opacity" values=".3;.9;.3" dur="2.1s" repeatCount="indefinite"/>
+      </path>
+      <path d="M535,324 Q620,317 705,324">
+        <animate attributeName="opacity" values=".9;.3;.9" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M520,358 Q620,350 720,358">
+        <animate attributeName="opacity" values=".4;1;.4" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Gentle Water Currents (Dòng phù sa trôi) -->
+  <g stroke="#E5A665" stroke-opacity=".3" stroke-width="1.6" stroke-linecap="round">
+    <path d="M80,285 Q200,272 320,285 T560,285"/>
+    <path d="M220,340 Q380,325 540,340 T860,340"/>
+    <path d="M680,288 Q820,275 960,288 T1140,288"/>
+    <path d="M740,365 Q900,350 1060,365"/>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CẦU KHỈ MIỀN TÂY (Rustic Monkey Bridge at Right Midground) -->
+  <!-- ======================================================== -->
+  <g id="cau-khi" transform="translate(820, 205)">
+    <!-- Bamboo X-Stilts (Chân cầu bắt chéo bằng tre) -->
+    <!-- Stilt set 1 -->
+    <line x1="45" y1="40" x2="65" y2="105" stroke="#5C422C" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="68" y1="42" x2="42" y2="105" stroke="#483220" stroke-width="4" stroke-linecap="round"/>
+    <!-- Stilt set 2 -->
+    <line x1="120" y1="36" x2="142" y2="110" stroke="#684B32" stroke-width="5" stroke-linecap="round"/>
+    <line x1="145" y1="38" x2="116" y2="110" stroke="#4E3623" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Stilt set 3 -->
+    <line x1="195" y1="34" x2="218" y2="112" stroke="#6E5036" stroke-width="5" stroke-linecap="round"/>
+    <line x1="222" y1="36" x2="190" y2="112" stroke="#4E3623" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Bamboo Uprights for Handrail (Cọc tay vịn) -->
+    <line x1="55" y1="4" x2="56" y2="55" stroke="#7A593D" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="130" y1="-2" x2="131" y2="52" stroke="#7A593D" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="208" y1="-6" x2="209" y2="50" stroke="#7A593D" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Bamboo Footway (Cây cầu khỉ lắt lẻo uốn cong một thân tre) -->
+    <path d="M0,58 C70,44 140,40 210,38 C260,37 310,40 360,45" stroke="#D1A76E" stroke-width="7" stroke-linecap="round"/>
+    <path d="M0,60 C70,46 140,42 210,40 C260,39 310,42 360,47" stroke="#734F2F" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Bamboo Handrail (Tay vịn cầu khỉ) -->
+    <path d="M15,16 C85,6 155,2 225,0 C275,0 325,4 365,10" stroke="#E2BC84" stroke-width="4" stroke-linecap="round"/>
+    <path d="M15,18 C85,8 155,4 225,2 C275,2 325,6 365,12" stroke="#875E38" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Figure on Bridge: Girl in áo bà ba & nón lá qua cầu khỉ -->
+    <g transform="translate(130, -5)">
+      <!-- Conical Hat (Nón lá nghiêng) -->
+      <polygon points="12,-16 0,-3 24,-3" fill="#FCEAC2" stroke="#8B6538" stroke-width="1.2"/>
+      <ellipse cx="12" cy="-3" rx="12" ry="2.5" fill="#E8CD97"/>
+      <!-- Head / Hair -->
+      <circle cx="12" cy="0" r="3.5" fill="#241B19"/>
+      <!-- Áo bà ba hồng/cam đất duyên dáng -->
+      <path d="M6,3 L18,3 L21,22 L3,22 Z" fill="#D96E61"/>
+      <line x1="12" y1="3" x2="12" y2="22" stroke="#B84F43" stroke-width="1"/>
+      <!-- Quần bà ba đen -->
+      <path d="M5,22 L10,38 L14,38 L19,22 Z" fill="#1C1819"/>
+      <!-- Hand on rail -->
+      <line x1="6" y1="10" x2="-2" y2="8" stroke="#D96E61" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-2" y1="8" x2="-2" y2="10" stroke="#F0C5A0" stroke-width="2"/>
+    </g>
+
+    <!-- Water ripples around stilts -->
+    <ellipse cx="55" cy="103" rx="14" ry="3" fill="none" stroke="#FDE5B0" stroke-opacity=".5" stroke-width="1.2"/>
+    <ellipse cx="130" cy="108" rx="16" ry="3.5" fill="none" stroke="#FDE5B0" stroke-opacity=".5" stroke-width="1.2"/>
+    <ellipse cx="208" cy="110" rx="15" ry="3.5" fill="none" stroke="#FDE5B0" stroke-opacity=".5" stroke-width="1.2"/>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- RẶNG DỪA NƯỚC (Nipa Palms / Dừa Nước Ven Sông - Cực chi tiết) -->
+  <!-- ======================================================== -->
+  <!-- Dừa nước bên phải (dưới chân cầu khỉ) -->
+  <g id="dua-nuoc-phai" transform="translate(1000, 240)">
+    <!-- Frond 1 curving left -->
+    <path d="M80,140 Q40,60 -60,20" stroke="#2B5237" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <g fill="#43774E" stroke="#1F4129" stroke-width="1">
+      <polygon points="-60,20 -45,15 -52,24"/>
+      <polygon points="-48,22 -30,16 -38,27"/>
+      <polygon points="-32,26 -12,18 -22,32"/>
+      <polygon points="-16,33 5,22 -6,40"/>
+      <polygon points="2,42 22,30 11,50"/>
+      <polygon points="20,53 40,40 28,62"/>
+    </g>
+    <!-- Frond 2 arching high -->
+    <path d="M100,140 Q80,40 -10,-20" stroke="#3D6E46" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <g fill="#568D5D" stroke="#254B2C" stroke-width="1">
+      <polygon points="-10,-20 8,-28 -2,-13"/>
+      <polygon points="6,-14 26,-22 14,-7"/>
+      <polygon points="24,-6 44,-14 31,1"/>
+      <polygon points="42,3 62,-5 48,11"/>
+      <polygon points="58,13 78,6 64,22"/>
+    </g>
+    <!-- Frond 3 upright lush -->
+    <path d="M110,140 Q130,30 80,-45" stroke="#254B2C" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g fill="#4E8655" stroke="#1F4129" stroke-width="1">
+      <polygon points="80,-45 94,-58 87,-40"/>
+      <polygon points="86,-38 105,-48 94,-30"/>
+      <polygon points="94,-27 114,-36 100,-18"/>
+      <polygon points="101,-15 120,-22 106,-5"/>
+      <polygon points="106,-2 124,-9 110,9"/>
+    </g>
+    <!-- Young water coconut fruit head (Bắp dừa nước / Quả dừa nước) -->
+    <g transform="translate(90, 95)">
+      <circle cx="0" cy="0" r="16" fill="#4A3423"/>
+      <circle cx="-5" cy="-4" r="6" fill="#6B4F35"/>
+      <circle cx="6" cy="-5" r="5.5" fill="#75563B"/>
+      <circle cx="5" cy="5" r="6" fill="#5E422C"/>
+      <circle cx="-5" cy="6" r="5" fill="#63452E"/>
+    </g>
+  </g>
+
+  <!-- Dừa nước bên trái (bờ sông tiền cảnh) -->
+  <g id="dua-nuoc-trai" transform="translate(140, 270)">
+    <path d="M30,130 Q10,40 -70,5" stroke="#294F34" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <g fill="#43774E" stroke="#1F4129" stroke-width="1">
+      <polygon points="-70,5 -52,0 -61,10"/>
+      <polygon points="-52,9 -32,2 -42,15"/>
+      <polygon points="-33,16 -12,8 -22,23"/>
+      <polygon points="-14,24 8,15 -2,32"/>
+      <polygon points="5,33 26,22 16,42"/>
+    </g>
+    <path d="M50,130 Q60,30 0,-30" stroke="#3D6E46" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g fill="#57925F" stroke="#254B2C" stroke-width="1">
+      <polygon points="0,-30 20,-38 8,-23"/>
+      <polygon points="10,-21 32,-30 18,-13"/>
+      <polygon points="22,-10 44,-19 28,0"/>
+      <polygon points="32,2 54,-6 38,13"/>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- XUỒNG BA LÁ MIỀN TÂY CHUẨN MỰC (Authentic Three-Plank Canoe) -->
+  <!-- ======================================================== -->
+  <!-- Gentle floating/rocking motion on water -->
+  <g id="xuong-ba-la" transform="translate(360, 260)">
+    <animateTransform attributeName="transform" type="translate"
+      values="360,260; 360,256; 360,260" dur="4.5s" repeatCount="indefinite"/>
+
+    <!-- Water wake / ripples around canoe -->
+    <ellipse cx="140" cy="58" rx="160" ry="12" fill="none" stroke="#FFE7A3" stroke-opacity=".35" stroke-width="1.5">
+      <animate attributeName="rx" values="155;165;155" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <path d="M-15,56 Q140,75 295,56" stroke="#FFEBB5" stroke-width="2" stroke-linecap="round" fill="none" opacity=".6"/>
+
+    <!-- Outer Hull (Thân xuồng ba lá gỗ dài, thon thả) -->
+    <!-- Bottom Plank & Side Planks (Ván đáy & Ván be) -->
+    <path d="M-10,42 C50,68 230,68 290,38 C240,60 60,60 -10,42 Z" fill="#3D2012"/>
+    <path d="M-12,40 C50,62 230,62 292,36 L270,55 C210,72 70,72 10,55 Z" fill="url(#xuangrad)"/>
+
+    <!-- Gunwale / Rim (Be xuồng viền gỗ) -->
+    <path d="M-14,39 C50,61 230,61 294,35" stroke="#DCA26D" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-14,41 C50,63 230,63 294,37" stroke="#683C1D" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Pointed Prow & Stern Decks (Mũi xuồng & Đuôi xuồng vát nhọn) -->
+    <!-- Prow (Mũi xuồng cong vút nhọn) -->
+    <polygon points="-14,39 12,47 6,52 -10,44" fill="#A87346" stroke="#5C3519" stroke-width="1"/>
+    <!-- Stern (Lá trui / Sạp đuôi xuồng) -->
+    <polygon points="294,35 268,43 274,48 290,38" fill="#966338" stroke="#5C3519" stroke-width="1"/>
+
+    <!-- Wooden Transverse Ribs Inside Hull (Các cong xuồng / Be giằng ngang) -->
+    <g stroke="#56301A" stroke-width="2.5" stroke-linecap="round" opacity=".9">
+      <line x1="35" y1="51" x2="42" y2="60"/>
+      <line x1="75" y1="54" x2="82" y2="63"/>
+      <line x1="115" y1="55" x2="122" y2="64"/>
+      <line x1="155" y1="55" x2="162" y2="64"/>
+      <line x1="195" y1="54" x2="202" y2="63"/>
+      <line x1="235" y1="50" x2="240" y2="58"/>
+    </g>
+
+    <!-- Fresh Green Coconuts in the prow (Mấy trái dừa xiêm hái đầu mũi) -->
+    <g transform="translate(30, 42)">
+      <circle cx="0" cy="0" r="7" fill="url(#coconutGrad)"/>
+      <circle cx="8" cy="-2" r="6.5" fill="url(#coconutGrad)"/>
+      <circle cx="5" cy="5" r="6" fill="#4B7725"/>
+      <circle cx="-5" cy="3" r="5.5" fill="#365719"/>
+    </g>
+
+    <!-- Person Paddling: Người chèo xuồng mặc áo bà ba nâu, đội nón lá -->
+    <g transform="translate(195, 2)">
+      <!-- Torso & Áo bà ba nâu đất truyền thống -->
+      <path d="M4,15 C-4,15 -10,25 -8,45 L16,45 C18,25 12,15 4,15 Z" fill="#6B442A"/>
+      <line x1="4" y1="15" x2="4" y2="45" stroke="#482A16" stroke-width="1.5"/>
+      <!-- Nón Lá Bến Tre (Conical Leaf Hat) -->
+      <polygon points="4,-15 -20,6 28,6" fill="#FCEAC2" stroke="#A67B47" stroke-width="1.5"/>
+      <!-- Nón lá rings & chin strap -->
+      <ellipse cx="4" cy="6" rx="24" ry="4" fill="#E8CE99" stroke="#875E31" stroke-width="1"/>
+      <line x1="-10" y1="6" x2="4" y2="15" stroke="#482A16" stroke-width="1"/>
+      <line x1="18" y1="6" x2="4" y2="15" stroke="#482A16" stroke-width="1"/>
+
+      <!-- Arms holding paddle (Tay chèo xuồng) -->
+      <path d="M-4,22 L-18,34 L-15,38 L-2,26 Z" fill="#6B442A"/>
+      <path d="M12,22 L-5,36 L-3,40 L16,26 Z" fill="#56331C"/>
+
+      <!-- Long Wooden Paddle (Mái chèo gỗ cắm xuống nước phù sa) -->
+      <line x1="15" y1="12" x2="-35" y2="68" stroke="#8F5E37" stroke-width="4" stroke-linecap="round"/>
+      <!-- Paddle blade (Lưỡi chèo dẹp dưới nước) -->
+      <path d="M-30,60 L-50,88 C-54,92 -48,96 -44,92 L-24,64 Z" fill="#A87449" stroke="#663E1F" stroke-width="1.2"/>
+      <!-- Water splash at paddle (Gợn sóng rẽ mái chèo) -->
+      <ellipse cx="-44" cy="85" rx="10" ry="2.5" fill="#FFEBB0" opacity=".7"/>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- KHÓM HOA LỤC BÌNH (Water Hyacinths with Violet Blossoms) -->
+  <!-- ======================================================== -->
+  <g id="luc-binh-1" transform="translate(260, 345)">
+    <animateTransform attributeName="transform" type="translate"
+      values="260,345; 265,348; 260,345" dur="5s" repeatCount="indefinite"/>
+    <!-- Bulbous green leaves -->
+    <ellipse cx="0" cy="0" rx="12" ry="7" fill="#417743" stroke="#234D25" stroke-width="1"/>
+    <ellipse cx="-12" cy="3" rx="10" ry="6" fill="#4F8B52"/>
+    <ellipse cx="12" cy="4" rx="11" ry="6.5" fill="#356537"/>
+    <ellipse cx="-4" cy="-5" rx="9" ry="5.5" fill="#5FA362"/>
+    <!-- Violet Blossoms (Bông lục bình tím ngát nhụy vàng kiêu sa) -->
+    <g transform="translate(0, -10)">
+      <ellipse cx="0" cy="-6" rx="5" ry="8" fill="#B388EB"/>
+      <ellipse cx="-6" cy="-2" rx="7" ry="5" fill="#9B66D6"/>
+      <ellipse cx="6" cy="-2" rx="7" ry="5" fill="#9B66D6"/>
+      <ellipse cx="0" cy="2" rx="6" ry="6" fill="#8047BE"/>
+      <!-- Yellow eye / teardrop on center petal -->
+      <ellipse cx="0" cy="-7" rx="2" ry="3" fill="#FCEE6D"/>
+      <circle cx="0" cy="-7" r="1" fill="#4A148C"/>
+    </g>
+  </g>
+
+  <g id="luc-binh-2" transform="translate(740, 360)">
+    <animateTransform attributeName="transform" type="translate"
+      values="740,360; 735,363; 740,360" dur="4.2s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#3D733F"/>
+    <ellipse cx="-14" cy="2" rx="11" ry="6" fill="#4B854D"/>
+    <ellipse cx="14" cy="3" rx="12" ry="7" fill="#325E34"/>
+    <g transform="translate(2, -9)">
+      <ellipse cx="0" cy="-5" rx="4.5" ry="7" fill="#B892ED"/>
+      <ellipse cx="-5" cy="-2" rx="6" ry="4.5" fill="#9F6ED8"/>
+      <ellipse cx="5" cy="-2" rx="6" ry="4.5" fill="#9F6ED8"/>
+      <circle cx="0" cy="-6" r="1.8" fill="#FFF176"/>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CÂY DỪA BẾN TRE TIỀN CẢNH (Iconic Leaning Coconut Palm - Siêu chi tiết) -->
+  <!-- ======================================================== -->
+  <g id="cay-dua-lon" transform="translate(0, 0)">
+    <!-- Palm Trunk Base & Exposed Roots (Gốc dừa bám rễ phù sa) -->
+    <path d="M0,420 L75,420 C70,395 62,370 54,340 C38,345 15,370 0,420 Z" fill="#3D2619"/>
+    <!-- Curved Ringed Trunk (Thân dừa uốn lượn vươn ra sông) -->
+    <path d="M60,360 C85,280 110,200 155,120 C165,102 180,85 200,75 L225,85 C200,105 180,135 155,210 C130,285 105,355 80,420 L55,420 Z"
+      fill="url(#trunkGrad)"/>
+
+    <!-- Horizontal Growth Ring Scars on Trunk (Từng ngấn vòng thân dừa) -->
+    <g stroke="#321D12" stroke-width="2.5" stroke-linecap="round" opacity=".75">
+      <path d="M62,350 Q75,348 85,354"/>
+      <path d="M72,320 Q86,317 96,324"/>
+      <path d="M83,290 Q98,286 109,294"/>
+      <path d="M96,260 Q111,255 123,263"/>
+      <path d="M110,230 Q126,224 138,233"/>
+      <path d="M125,198 Q142,192 155,201"/>
+      <path d="M142,168 Q159,161 172,170"/>
+      <path d="M162,136 Q178,128 191,137"/>
+      <path d="M182,108 Q196,100 208,109"/>
+    </g>
+
+    <!-- Fibrous Sheaths at Crown (Bẹ dừa & Xơ dừa gốc ngọn) -->
+    <g fill="#4E3320">
+      <polygon points="195,95 215,70 230,85 210,105"/>
+      <polygon points="185,110 205,85 220,100 200,120"/>
+    </g>
+
+    <!-- HEAVY CLUSTERS OF COCONUTS (Quầy dừa xiêm trĩu quả bóng đẹp) -->
+    <g id="quay-dua" transform="translate(205, 80)">
+      <!-- Back tier coconuts -->
+      <circle cx="-16" cy="-8" r="14" fill="#3D5A1E"/>
+      <circle cx="8" cy="-14" r="13.5" fill="#4B6E25"/>
+      <circle cx="22" cy="-4" r="13" fill="#446322"/>
+      <!-- Mid tier coconuts with rich gradient -->
+      <circle cx="-12" cy="10" r="15" fill="url(#coconutGrad)"/>
+      <circle cx="10" cy="8" r="16" fill="url(#coconutGrad)"/>
+      <circle cx="28" cy="14" r="14" fill="url(#coconutGrad)"/>
+      <!-- Front tier coconuts -->
+      <circle cx="-2" cy="22" r="15.5" fill="url(#coconutGrad)"/>
+      <circle cx="18" cy="26" r="14.5" fill="url(#coconutGrad)"/>
+      <!-- Coconut calyx / stem scars (Cuống dừa) -->
+      <circle cx="-12" cy="4" r="3" fill="#2E4215"/>
+      <circle cx="10" cy="2" r="3" fill="#2E4215"/>
+      <circle cx="-2" cy="16" r="3" fill="#2E4215"/>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- MAJESTIC COCONUT FRONDS (Tàu dừa xòe rộng, tả từng phiến lá) -->
+    <!-- ======================================================== -->
+    <g id="tau-dua" stroke-linecap="round">
+      <!-- FROND 1: Arching high upward & left -->
+      <path d="M210,75 Q150,-20 30,-5" stroke="#5E8C3B" stroke-width="4.5" fill="none"/>
+      <path d="M210,75 Q150,-20 30,-5" stroke="#7CB342" stroke-width="2" fill="none"/>
+      <!-- Leaflets for Frond 1 -->
+      <g stroke="#3A6320" stroke-width="2" opacity=".9">
+        <line x1="180" y1="42" x2="160" y2="10"/><line x1="180" y1="42" x2="200" y2="20"/>
+        <line x1="155" y1="22" x2="130" y2="-15"/><line x1="155" y1="22" x2="175" y2="-5"/>
+        <line x1="130" y1="9" x2="100" y2="-30"/><line x1="130" y1="9" x2="148" y2="-20"/>
+        <line x1="105" y1="2" x2="72" y2="-35"/><line x1="105" y1="2" x2="120" y2="-28"/>
+        <line x1="80" y1="0" x2="48" y2="-32"/><line x1="80" y1="0" x2="92" y2="-26"/>
+        <line x1="55" y1="0" x2="25" y2="-25"/><line x1="55" y1="0" x2="65" y2="-22"/>
+      </g>
+
+      <!-- FROND 2: Sweeping far out over the water to the right -->
+      <path d="M215,75 Q360,10 490,95" stroke="#548235" stroke-width="5" fill="none"/>
+      <path d="M215,75 Q360,10 490,95" stroke="#8BC34A" stroke-width="2.2" fill="none"/>
+      <!-- Leaflets Frond 2 (Hàng lá rủ xuống bóng nước) -->
+      <g stroke="#2F5517" stroke-width="2.2">
+        <line x1="250" y1="62" x2="260" y2="15"/><line x1="250" y1="62" x2="238" y2="105"/>
+        <line x1="285" y1="52" x2="300" y2="8"/><line x1="285" y1="52" x2="272" y2="110"/>
+        <line x1="320" y1="47" x2="340" y2="8"/><line x1="320" y1="47" x2="310" y2="115"/>
+        <line x1="355" y1="47" x2="382" y2="14"/><line x1="355" y1="47" x2="348" y2="120"/>
+        <line x1="390" y1="52" x2="422" y2="26"/><line x1="390" y1="52" x2="388" y2="128"/>
+        <line x1="425" y1="62" x2="460" y2="42"/><line x1="425" y1="62" x2="426" y2="135"/>
+        <line x1="458" y1="77" x2="495" y2="65"/><line x1="458" y1="77" x2="462" y2="140"/>
+      </g>
+
+      <!-- FROND 3: Arching downward left towards bank -->
+      <path d="M205,80 Q130,85 50,180" stroke="#466E2B" stroke-width="4.5" fill="none"/>
+      <g stroke="#264714" stroke-width="2">
+        <line x1="175" y1="92" x2="160" y2="140"/><line x1="175" y1="92" x2="195" y2="130"/>
+        <line x1="145" y1="105" x2="125" y2="165"/><line x1="145" y1="105" x2="165" y2="152"/>
+        <line x1="115" y1="125" x2="90" y2="190"/><line x1="115" y1="125" x2="132" y2="180"/>
+        <line x1="85" y1="150" x2="58" y2="215"/><line x1="85" y1="150" x2="98" y2="205"/>
+      </g>
+
+      <!-- FROND 4: Drooping gracefully directly over river -->
+      <path d="M210,85 Q280,130 330,225" stroke="#3D6324" stroke-width="4.5" fill="none"/>
+      <g stroke="#254213" stroke-width="2.2">
+        <line x1="235" y1="102" x2="205" y2="152"/><line x1="235" y1="102" x2="265" y2="145"/>
+        <line x1="260" y1="124" x2="230" y2="182"/><line x1="260" y1="124" x2="295" y2="170"/>
+        <line x1="285" y1="152" x2="255" y2="215"/><line x1="285" y1="152" x2="320" y2="200"/>
+        <line x1="308" y1="185" x2="280" y2="248"/><line x1="308" y1="185" x2="340" y2="232"/>
+      </g>
+
+      <!-- FROND 5: Young fresh frond shooting center-high -->
+      <path d="M210,70 Q240,-10 270,-40" stroke="#7BB33B" stroke-width="3.5" fill="none"/>
+      <g stroke="#538221" stroke-width="1.8">
+        <line x1="225" y1="40" x2="200" y2="10"/><line x1="225" y1="40" x2="248" y2="15"/>
+        <line x1="240" y1="15" x2="215" y2="-18"/><line x1="240" y1="15" x2="262" y2="-10"/>
+        <line x1="255" y1="-12" x2="232" y2="-45"/><line x1="255" y1="-12" x2="278" y2="-38"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- GOLDEN ARTISANAL TITLE PLAQUE (Ký Ức Người Con Xứ Dừa) -->
+  <!-- ======================================================== -->
+  <g transform="translate(620, 48)">
+    <!-- Wooden & Lacquer Plaque Frame -->
+    <rect x="-240" y="0" width="480" height="96" rx="14" fill="#201217" fill-opacity=".86" stroke="#E5B26E" stroke-width="1.8"/>
+    <!-- Inner Golden Border -->
+    <rect x="-234" y="6" width="468" height="84" rx="10" fill="none" stroke="#DCA259" stroke-opacity=".5" stroke-width="1"/>
+
+    <!-- Decorative Corner Filigree -->
+    <g stroke="#F7CB88" stroke-width="1.2" fill="none">
+      <path d="M-226,14 L-216,14 M-226,14 L-226,24"/>
+      <path d="M226,14 L216,14 M226,14 L226,24"/>
+      <path d="M-226,82 L-216,82 M-226,82 L-226,72"/>
+      <path d="M226,82 L216,82 M226,82 L226,72"/>
+    </g>
+
+    <!-- Typography -->
+    <!-- Primary Title -->
+    <text x="0" y="36" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-size="14" letter-spacing="4.5" fill="#FCE2B3" font-weight="600">
+      KÝ ỨC NGƯỜI CON XỨ DỪA
+    </text>
+    <!-- Calligraphic English Subtitle -->
+    <text x="0" y="66" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-size="25" font-weight="bold" letter-spacing="1.5" fill="#FFF6DC">
+      Code from the Mekong
+    </text>
+    <!-- Geographical & Technical Root -->
+    <text x="0" y="82" text-anchor="middle" font-family="monospace" font-size="8.5" letter-spacing="3" fill="#E8B878">
+      BẾN TRE  •  VIỆT NAM  •  SOFTWARE ENGINEERING
+    </text>
+  </g>
+
+  <!-- Ambient Golden Fireflies (Đom đóm hoàng hôn bên rặng dừa) -->
+  <g fill="#FFF59D" filter="url(#gentleGlow)">
+    <circle cx="340" cy="235" r="2.2">
+      <animate attributeName="opacity" values=".1;.9;.1" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="275" r="2">
+      <animate attributeName="opacity" values=".9;.15;.9" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="290" r="2.5">
+      <animate attributeName="opacity" values=".2;1;.2" dur="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="260" r="2">
+      <animate attributeName="opacity" values="1;.2;1" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="340" r="2.2">
+      <animate attributeName="opacity" values=".15;.85;.15" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 </svg>

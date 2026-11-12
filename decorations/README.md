@@ -1,21 +1,51 @@
-# Xứ Dừa Edition — GitHub Profile Art
+# Xứ Dừa Edition — GitHub Profile Art (Bến Tre & Miền Tây Nam Bộ)
 
-Bộ minh họa SVG theo cảm hứng Bến Tre / miền Tây Nam Bộ: hàng dừa, sông rạch, ghe gỗ, nắng chiều.
+Bộ minh họa nghệ thuật vector SVG động đậm đà bản sắc miền Tây Nam Bộ & Xứ Dừa Bến Tre:
+Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ gập ghềnh, xuồng ba lá lướt sóng phù sa, hoa lục bình tím biếc và hoàng hôn sông nước êm đềm.
 
-## Tích hợp
+---
 
-README đã được cập nhật để dùng banner `decorations/xu-dua-hero.svg` thay cho `background.jpg`.
+## 🎨 Danh mục tác phẩm (SVG Assets)
 
-Các asset khác:
-- `decorations/river-meander.svg`: đường phân cách dạng dòng sông.
-- `decorations/sampan.svg`: ghe gỗ nhỏ dùng như điểm nhấn cạnh phần About.
+1. **`decorations/xu-dua-hero.svg`** — **Banner nghệ thuật đầu trang:**
+   - **Cây dừa Bến Tre cổ thụ:** Thân dừa uốn lượn có từng ngấn vòng sinh trưởng, bẹ xơ dừa, quầy dừa xiêm trĩu quả xanh mướt, tán lá xòe rộng tả từng phiến lá đung đưa trong gió chiều.
+   - **Xuồng ba lá truyền thống:** Thân gỗ ghép 3 tấm ván theo đúng lối đóng xuồng miền Tây, các thanh cong xuồng bên trong lòng, chùm dừa tươi trên mũi, người lái mặc áo bà ba nâu, đội nón lá chèo xuồng rẽ sóng phù sa.
+   - **Cây cầu khỉ chênh vênh:** Bắt chéo chân tre chữ X, một thân tre uốn cong lắt lẻo và tay vịn mộc mạc, bóng cô gái áo bà ba đội nón lá nhẹ bước qua cầu.
+   - **Rặng dừa nước & thiên nhiên:** Dừa nước ven bờ đâm chồi, đàn cò trắng sải cánh bay về tổ trên nền hoàng hôn rực rỡ, khóm hoa lục bình tím ngát trôi sông.
+   - **Bảng chữ vinh danh:** *"KÝ ỨC NGƯỜI CON XỨ DỪA — Code from the Mekong — Bến Tre, Việt Nam"*.
 
-Ví dụ nhúng thêm divider:
+2. **`decorations/sampan.svg`** — **Điểm nhấn Xuồng Ba Lá (About Me Mascot):**
+   - Đúng chuẩn **xuồng ba lá** (không phải thuyền buồm), thân gỗ mộc có cong xuồng và thanh giằng ngang.
+   - Chở buồng dừa xiêm tươi, giỏ hoa điên điển vàng, người chèo áo bà ba nón lá cầm mái dầm dipping vào dòng nước phù sa.
+   - Hiệu ứng động nhấp nhô nhẹ nhàng trên mặt nước cùng hoa lục bình tím nở nhụy vàng.
+
+3. **`decorations/river-meander.svg`** — **Đường phân cách dòng sông phù sa:**
+   - Dòng sông Mê Kông uốn lượn mang dòng nước phù sa trôi êm đềm (animated stream flow).
+   - Điểm xuyết cây dừa nghiêng bóng, rặng dừa nước xanh tươi, cầu khỉ bắc qua rạch, xuồng ba lá lướt nhẹ, bụi cỏ lau và khóm lục bình trôi dạt.
+
+---
+
+## 📐 Cách nhúng vào README.md
+
 ```html
+<!-- Banner đầu trang -->
+<div align="center">
+  <img src="./decorations/xu-dua-hero.svg" width="100%" alt="Ký ức người con Xứ Dừa Banner" />
+</div>
+
+<!-- Xuồng ba lá điểm nhấn About -->
+<div align="center">
+  <img src="./decorations/sampan.svg" width="260" alt="Xuồng ba lá Bến Tre" />
+</div>
+
+<!-- Divider dòng sông phù sa -->
 <div align="center">
   <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 ```
 
-## Ghi chú
-SVG có animation SMIL nhẹ (gợn nước, ánh sáng, chuyển động ghe). GitHub có thể làm phẳng animation trong một số ngữ cảnh; kiểm tra bằng cách mở file SVG trực tiếp trên trình duyệt. Nếu README hiển thị tĩnh, hình vẫn giữ nguyên bố cục.
+---
+
+## 🍃 Lưu ý về hiển thị & SMIL Animation
+- Toàn bộ chuyển động sử dụng chuẩn **SVG SMIL Native**, không phụ thuộc JavaScript hay thư viện ngoài.
+- Tự động co giãn theo kích thước màn hình (Responsive `viewBox`), tương thích hoàn hảo cả giao diện Dark Mode và Light Mode trên GitHub.

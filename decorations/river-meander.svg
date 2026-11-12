@@ -1,1 +1,255 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="150" viewBox="0 0 1100 150" fill="none"><defs><linearGradient id="r" x1="0" y1="0" x2="1100" y2="0"><stop stop-color="#5A9C83" stop-opacity=".2"/><stop offset=".5" stop-color="#D5B17A"/><stop offset="1" stop-color="#5A9C83" stop-opacity=".2"/></linearGradient></defs><path d="M0 74C100 26 180 120 280 74S460 28 550 74 730 119 830 74 1000 30 1100 74" stroke="#2E7168" stroke-opacity=".18" stroke-width="20" stroke-linecap="round"/><path d="M0 74C100 26 180 120 280 74S460 28 550 74 730 119 830 74 1000 30 1100 74" stroke="url(#r)" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 13"><animate attributeName="stroke-dashoffset" from="0" to="-176" dur="12s" repeatCount="indefinite"/></path><g fill="#477A54"><path d="M130 73q-20-35-55-31q29 13 55 31q-4-43 20-55q-9 28-20 55q28-32 57-20q-29 8-57 20z"/><path d="M960 74q-18-32-50-29q26 12 50 29q-4-38 18-49q-8 25-18 49q25-29 51-18q-26 7-51 18z"/></g><g fill="#D9B77E"><circle cx="280" cy="74" r="4"><animate attributeName="r" values="2;5;2" dur="3s" repeatCount="indefinite"/></circle><circle cx="550" cy="74" r="4"><animate attributeName="r" values="5;2;5" dur="3.7s" repeatCount="indefinite"/></circle><circle cx="830" cy="74" r="4"><animate attributeName="r" values="2;5;2" dur="4.1s" repeatCount="indefinite"/></circle></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="190" viewBox="0 0 1100 190" fill="none">
+  <defs>
+    <!-- River Current & Bank Gradients -->
+    <linearGradient id="riverFlow" x1="0" y1="0" x2="1100" y2="0">
+      <stop offset="0%" stop-color="#C98F56" stop-opacity=".25"/>
+      <stop offset="25%" stop-color="#558C73" stop-opacity=".75"/>
+      <stop offset="50%" stop-color="#E5AF71" stop-opacity=".9"/>
+      <stop offset="75%" stop-color="#558C73" stop-opacity=".75"/>
+      <stop offset="100%" stop-color="#C98F56" stop-opacity=".25"/>
+    </linearGradient>
+
+    <linearGradient id="bankGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#735035"/>
+      <stop offset="100%" stop-color="#4A311F"/>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ============================================== -->
+  <!-- 1. DÒNG SÔNG PHÙ SA MIỀN TÂY UỐN LƯỢN         -->
+  <!-- ============================================== -->
+  <!-- Broad River Channel Silhouette -->
+  <path d="M0,95 C140,35 240,155 380,95 S620,35 760,95 S960,155 1100,95"
+    stroke="#326356" stroke-opacity=".22" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Main Alluvial Current Body -->
+  <path d="M0,95 C140,35 240,155 380,95 S620,35 760,95 S960,155 1100,95"
+    stroke="#C28B52" stroke-opacity=".45" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Animated Glowing Stream Dashes (Dòng nước phù sa trôi êm đềm) -->
+  <path d="M0,95 C140,35 240,155 380,95 S620,35 760,95 S960,155 1100,95"
+    stroke="url(#riverFlow)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="12 16" filter="url(#softGlow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-224" dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ============================================== -->
+  <!-- 2. CÂY DỪA NGHIÊNG BÊN BỜ SÔNG (TRÁI)          -->
+  <!-- ============================================== -->
+  <g id="cay-dua-bo-trai" transform="translate(45, 95)">
+    <!-- Leaning Palm Trunk -->
+    <path d="M-15,45 C5,10 25,-25 45,-55" stroke="#5E402B" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+    <path d="M-15,45 C5,10 25,-25 45,-55" stroke="#875E3F" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <!-- Trunk Rings -->
+    <g stroke="#3D281B" stroke-width="1.5">
+      <line x1="-3" y1="28" x2="3" y2="30"/>
+      <line x1="8" y1="5" x2="14" y2="7"/>
+      <line x1="22" y1="-18" x2="28" y2="-16"/>
+      <line x1="34" y1="-40" x2="40" y2="-38"/>
+    </g>
+    <!-- Cluster of Coconuts at crown -->
+    <g transform="translate(45, -55)">
+      <circle cx="-4" cy="2" r="5" fill="#75A83E"/>
+      <circle cx="4" cy="3" r="4.8" fill="#5F8C2F"/>
+      <circle cx="0" cy="8" r="4.5" fill="#4B7023"/>
+    </g>
+    <!-- Palm Fronds (Tàu dừa xòe tán) with wind animation -->
+    <g transform="translate(45, -55)">
+      <animateTransform attributeName="transform" type="rotate"
+        values="0 45 -55; 2 45 -55; -1.5 45 -55; 0 45 -55" dur="6s" repeatCount="indefinite"/>
+      <!-- Frond 1: Curving over river -->
+      <path d="M0,0 Q35,-15 70,5" stroke="#487834" stroke-width="2.5" fill="none"/>
+      <path d="M15,-5 L20,10 M30,-7 L36,12 M45,-4 L52,14 M60,0 L68,16" stroke="#355A24" stroke-width="1.4"/>
+      <!-- Frond 2: Arching high -->
+      <path d="M0,0 Q15,-35 40,-45" stroke="#5C9442" stroke-width="2.5" fill="none"/>
+      <path d="M8,-12 L20,-16 M18,-24 L32,-28 M28,-34 L42,-36" stroke="#436F2E" stroke-width="1.4"/>
+      <!-- Frond 3: Drooping left -->
+      <path d="M0,0 Q-25,-20 -45,-5" stroke="#487834" stroke-width="2.5" fill="none"/>
+      <path d="M-10,-8 L-14,6 M-22,-12 L-28,4 M-34,-10 L-42,2" stroke="#355A24" stroke-width="1.4"/>
+      <!-- Frond 4: Lower drooping over bank -->
+      <path d="M0,0 Q-15,15 -35,28" stroke="#3A612A" stroke-width="2.2" fill="none"/>
+    </g>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 3. RẶNG DỪA NƯỚC VEN BỜ (Nipa Palms Cluster)    -->
+  <!-- ============================================== -->
+  <!-- Dừa nước cụm 1 (Khoảng x=220 bờ trên) -->
+  <g transform="translate(225, 62)">
+    <path d="M0,35 Q-15,-10 -40,-25" stroke="#2B5938" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <g fill="#438253" stroke="#21472B" stroke-width=".8">
+      <polygon points="-40,-25 -28,-22 -32,-15"/>
+      <polygon points="-26,-15 -14,-13 -18,-6"/>
+      <polygon points="-12,-4 0,-3 -4,4"/>
+    </g>
+    <path d="M5,35 Q10,-15 -10,-35" stroke="#387046" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <g fill="#4F9460" stroke="#21472B" stroke-width=".8">
+      <polygon points="-10,-35 2,-32 -2,-24"/>
+      <polygon points="1,-22 13,-20 8,-12"/>
+      <polygon points="7,-9 19,-8 14,0"/>
+    </g>
+    <path d="M10,35 Q30,5 50,-15" stroke="#2B5938" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <!-- Coconut water fruit head (Buồng dừa nước) -->
+    <circle cx="5" cy="24" r="7" fill="#4E3624"/>
+    <circle cx="3" cy="22" r="2.5" fill="#6B4B32"/>
+  </g>
+
+  <!-- Dừa nước cụm 2 (Khoảng x=950 bờ phải) -->
+  <g transform="translate(940, 120)">
+    <path d="M0,35 Q-20,-5 -50,-20" stroke="#2B5938" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <g fill="#438253" stroke="#21472B" stroke-width=".8">
+      <polygon points="-50,-20 -38,-18 -42,-11"/>
+      <polygon points="-34,-11 -22,-9 -26,-2"/>
+      <polygon points="-18,-1 -6,0 -10,7"/>
+    </g>
+    <path d="M5,35 Q15,-12 0,-38" stroke="#3B784B" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <g fill="#529964" stroke="#21472B" stroke-width=".8">
+      <polygon points="0,-38 12,-34 7,-26"/>
+      <polygon points="9,-24 21,-21 16,-13"/>
+    </g>
+    <circle cx="3" cy="25" r="7.5" fill="#4E3624"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 4. CÂY CẦU KHỈ BẮC QUA RẠCH (MONKEY BRIDGE)    -->
+  <!-- ============================================== -->
+  <g id="mini-cau-khi" transform="translate(640, 48)">
+    <!-- Bridge X-Stilts (Chân cọc tre cắm lòng sông) -->
+    <!-- Stilt 1 -->
+    <line x1="25" y1="36" x2="38" y2="78" stroke="#5E432D" stroke-width="3.2" stroke-linecap="round"/>
+    <line x1="40" y1="38" x2="23" y2="78" stroke="#483220" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Stilt 2 -->
+    <line x1="85" y1="34" x2="98" y2="82" stroke="#684B32" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="100" y1="36" x2="83" y2="82" stroke="#4E3623" stroke-width="3" stroke-linecap="round"/>
+    <!-- Stilt 3 -->
+    <line x1="145" y1="38" x2="158" y2="80" stroke="#5E432D" stroke-width="3.2" stroke-linecap="round"/>
+    <line x1="160" y1="40" x2="143" y2="80" stroke="#483220" stroke-width="2.8" stroke-linecap="round"/>
+
+    <!-- Handrail Posts (Cọc tay vịn) -->
+    <line x1="32" y1="12" x2="33" y2="48" stroke="#7A593D" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="92" y1="8" x2="93" y2="46" stroke="#7A593D" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="152" y1="14" x2="153" y2="48" stroke="#7A593D" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Bamboo Footway (Thân cầu khỉ lắt lẻo uốn lượn) -->
+    <path d="M0,48 C50,38 130,38 185,46" stroke="#D1A76E" stroke-width="4.8" stroke-linecap="round"/>
+    <path d="M0,49 C50,39 130,39 185,47" stroke="#7A5331" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Bamboo Handrail (Cây tay vịn lắt lẻo) -->
+    <path d="M10,20 C60,10 130,10 175,18" stroke="#E5C189" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10,21 C60,11 130,11 175,19" stroke="#8E633C" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Tiny figure on bridge: Bóng cô gái nón lá qua cầu khỉ -->
+    <g transform="translate(90, 4)">
+      <polygon points="6,-10 -2,0 14,0" fill="#FCEAC2" stroke="#946C3B" stroke-width="1"/>
+      <circle cx="6" cy="3" r="2.5" fill="#241B19"/>
+      <path d="M2,5 L10,5 L12,18 L0,18 Z" fill="#D96E61"/>
+      <line x1="2" y1="18" x2="4" y2="28" stroke="#1C1819" stroke-width="2"/>
+      <line x1="8" y1="18" x2="7" y2="28" stroke="#1C1819" stroke-width="2"/>
+    </g>
+
+    <!-- Ripple circles under bridge stilts -->
+    <ellipse cx="30" cy="76" rx="9" ry="2.2" fill="none" stroke="#FFE7A8" stroke-opacity=".5" stroke-width="1"/>
+    <ellipse cx="90" cy="80" rx="10" ry="2.5" fill="none" stroke="#FFE7A8" stroke-opacity=".5" stroke-width="1"/>
+    <ellipse cx="150" cy="78" rx="9" ry="2.2" fill="none" stroke="#FFE7A8" stroke-opacity=".5" stroke-width="1"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 5. XUỒNG BA LÁ NHỎ XUÔI DÒNG (PADDLING CANOE) -->
+  <!-- ============================================== -->
+  <g transform="translate(420, 88)">
+    <animateTransform attributeName="transform" type="translate"
+      values="420,88; 422,85; 420,88" dur="4s" repeatCount="indefinite"/>
+
+    <!-- Water wake -->
+    <path d="M-15,16 Q40,24 95,16" stroke="#FFEBB5" stroke-width="1.5" stroke-linecap="round" fill="none" opacity=".5"/>
+
+    <!-- Hull of Xuồng Ba Lá -->
+    <path d="M-8,12 C18,22 68,22 88,10 L80,16 C60,25 20,25 -2,16 Z" fill="#6E4426"/>
+    <path d="M-10,11 C18,20 68,20 90,9" stroke="#C9945F" stroke-width="2" stroke-linecap="round"/>
+    <!-- Pointed Bow & Stern -->
+    <polygon points="-10,11 3,14 0,16 -8,13" fill="#A87548"/>
+    <!-- Internal ribs -->
+    <line x1="12" y1="14" x2="15" y2="18" stroke="#3D2010" stroke-width="1.5"/>
+    <line x1="32" y1="15" x2="35" y2="19" stroke="#3D2010" stroke-width="1.5"/>
+    <line x1="52" y1="15" x2="55" y2="19" stroke="#3D2010" stroke-width="1.5"/>
+    <line x1="72" y1="13" x2="74" y2="17" stroke="#3D2010" stroke-width="1.5"/>
+
+    <!-- Boater in Nón Lá -->
+    <g transform="translate(62, -2)">
+      <polygon points="3,-8 -7,2 13,2" fill="#FCE8BE" stroke="#A1743E" stroke-width="1"/>
+      <path d="M0,3 L8,3 L9,12 L-1,12 Z" fill="#69432B"/>
+      <!-- Paddle -->
+      <line x1="8" y1="4" x2="-8" y2="24" stroke="#875A34" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="-8" cy="24" rx="4" ry="1.5" fill="#FFE5A0" opacity=".6"/>
+    </g>
+
+    <!-- Cargo of green coconuts -->
+    <circle cx="10" cy="12" r="3.5" fill="#6FA337"/>
+    <circle cx="16" cy="11" r="3" fill="#5A872A"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 6. KHÓM HOA LỤC BÌNH TRÔI DẬP DỀNH (HYACINTHS) -->
+  <!-- ============================================== -->
+  <!-- Lục bình cụm 1 (x=330, y=120) -->
+  <g transform="translate(330, 118)">
+    <animateTransform attributeName="transform" type="translate"
+      values="330,118; 333,121; 330,118" dur="4.5s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="9" ry="5" fill="#3D733F"/>
+    <ellipse cx="-8" cy="2" rx="7" ry="4" fill="#4B854D"/>
+    <ellipse cx="8" cy="2" rx="7.5" ry="4.5" fill="#325E34"/>
+    <!-- Bông tím -->
+    <ellipse cx="0" cy="-5" rx="3" ry="5" fill="#B388EB"/>
+    <ellipse cx="-4" cy="-2" rx="4" ry="3" fill="#9B66D6"/>
+    <ellipse cx="4" cy="-2" rx="4" ry="3" fill="#9B66D6"/>
+    <circle cx="0" cy="-6" r="1.2" fill="#FFEE58"/>
+  </g>
+
+  <!-- Lục bình cụm 2 (x=830, y=85) -->
+  <g transform="translate(830, 85)">
+    <animateTransform attributeName="transform" type="translate"
+      values="830,85; 827,88; 830,85" dur="3.8s" repeatCount="indefinite"/>
+    <ellipse cx="0" cy="0" rx="8" ry="4.5" fill="#3D733F"/>
+    <ellipse cx="-7" cy="1" rx="6" ry="3.5" fill="#4B854D"/>
+    <ellipse cx="7" cy="2" rx="6.5" ry="4" fill="#325E34"/>
+    <ellipse cx="0" cy="-4" rx="2.8" ry="4.5" fill="#B388EB"/>
+    <circle cx="0" cy="-5" r="1" fill="#FFEE58"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 7. BỤI CỎ LAU & HOA VÀNG VEN BỜ (REEDS & FLORA) -->
+  <!-- ============================================== -->
+  <g stroke="#3A6640" stroke-width="1.8" stroke-linecap="round">
+    <!-- Reeds left bank -->
+    <line x1="150" y1="130" x2="145" y2="105"/>
+    <line x1="154" y1="132" x2="152" y2="98"/>
+    <line x1="158" y1="130" x2="162" y2="108"/>
+    <!-- Reeds mid bank -->
+    <line x1="530" y1="62" x2="526" y2="40"/>
+    <line x1="535" y1="64" x2="534" y2="35"/>
+    <line x1="540" y1="63" x2="546" y2="42"/>
+    <!-- Yellow river flowers (Hoa dại ven bờ) -->
+    <circle cx="152" cy="98" r="2.5" fill="#FDD835" stroke="none"/>
+    <circle cx="534" cy="35" r="2.5" fill="#FDD835" stroke="none"/>
+  </g>
+
+  <!-- River current pulse nodes (Nhịp đập sông Mê Kông) -->
+  <g fill="#F2CD8A">
+    <circle cx="140" cy="50" r="3">
+      <animate attributeName="r" values="1.8;3.8;1.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="55" r="3.2">
+      <animate attributeName="r" values="3.5;1.8;3.5" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="890" cy="130" r="3">
+      <animate attributeName="r" values="1.8;3.8;1.8" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

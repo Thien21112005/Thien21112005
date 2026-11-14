@@ -5,17 +5,18 @@
 
   <h1>Nguyen Ngoc Thien</h1>
 
+  <p><em>Người con xứ dừa Bến Tre, lên Sài Gòn học nghề viết phần mềm</em></p>
   <p><strong>Software Engineering Student @ HCMUTE • Full-Stack Developer • ML Enthusiast</strong></p>
 
   <a href="https://github.com/Thien21112005">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38B2AC&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;High-Concurrency+Systems;Machine+Learning+Enthusiast;Clean+Architecture+%26+System+Design" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=0F766E&center=true&vCenter=true&width=600&lines=Ch%C3%A0o+b%E1%BA%A1n%2C+gh%C3%A9+x%E1%BB%A9+d%E1%BB%ABa+ch%C6%A1i+nha%21;Ng%C6%B0%E1%BB%9Di+con+B%E1%BA%BFn+Tre+vi%E1%BA%BFt+code;Full-Stack+Developer;Ch%E1%BA%ADm+m%C3%A0+ch%E1%BA%AFc%2C+nh%C6%B0+ch%C3%A8o+xu%E1%BB%93ng" alt="Typing SVG" />
   </a>
 
   <p>
     <a href="https://www.linkedin.com/in/ngoc-thien-nguyen/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="mailto:thien.nnt.211105@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
     <a href="https://www.facebook.com/nguyen.ngoc.thien.625540"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" /></a>
-    <img src="https://komarev.com/ghpvc/?username=Thien21112005&label=Profile+Views&color=38B2AC&style=flat-square" alt="Thien21112005" />
+    <img src="https://komarev.com/ghpvc/?username=Thien21112005&label=Kh%C3%A1ch+gh%C3%A9+b%E1%BA%BFn&color=0F766E&style=flat-square" alt="Thien21112005" />
   </p>
 
   <br>
@@ -23,22 +24,25 @@
   <img src="./decorations/sampan.svg" width="260" alt="Xuồng ba lá Bến Tre" />
 </div>
 
+## 🥥 Đôi dòng làm quen
+
+> Mình lớn lên ở xứ dừa Bến Tre, nơi kênh rạch chằng chịt, đi đâu cũng phải qua cầu khỉ hay bơi xuồng.
+> Giờ mình học Kỹ thuật Phần mềm ở HCMUTE, nhưng cách làm việc thì vẫn giữ nết người miền Tây:
+> **làm cái gì cũng chắc tay, xài được lâu, và chừa chỗ cho người tới sau dễ sửa.**
+
 ```typescript
-// engineer.config.ts
-const developer: EngineerProfile = {
-  name: "Nguyen Ngoc Thien",
-  role: "Full-Stack Developer & Software Engineer",
-  education: {
-    institution: "Ho Chi Minh City University of Technology and Education (HCMUTE)",
-    major: "Software Engineering"
-  },
-  architectureFocus: [
-    "High-concurrency systems & distributed locking (Redis Redlock)",
-    "Decoupled micro-architecture & clean code principles",
-    "Heuristic AI algorithms & applied machine learning"
+// nguoi-con-xu-dua.ts — sơ yếu lý lịch kiểu miền Tây
+const thien = {
+  queNha: "Bến Tre — xứ dừa",
+  dangHoc: "Software Engineering @ HCMUTE",
+  nghe: "Full-Stack Developer & Software Engineer",
+  hayMayMo: [
+    "Hệ thống chịu tải cao & khóa phân tán (Redis Redlock)",
+    "Kiến trúc tách lớp gọn gàng, code sạch dễ đọc",
+    "Thuật toán heuristic & machine learning ứng dụng"
   ],
-  interests: ["Competitive Badminton", "Technical Literature", "System Design"],
-  contact: "thien.nnt.211105@gmail.com"
+  lucRanh: ["Đánh cầu lông", "Đọc sách kỹ thuật", "Vẽ sơ đồ hệ thống"],
+  lienLac: "thien.nnt.211105@gmail.com" // nhắn mình nha, mình rep liền
 };
 ```
 
@@ -46,12 +50,14 @@ const developer: EngineerProfile = {
   <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 
-## <img src="./icons/layers.svg" width="22" height="22" /> Tech Stack & Architectural Ecosystem
+## 🛶 Đồ nghề trên ghe
+
+<p><em>Người miền Tây đi ghe thì phải đủ dầm, chèo, lưới. Còn đây là đồ nghề mình mang theo mỗi chuyến code:</em></p>
 
 <div align="center">
 
 <p>
-  <strong><img src="./icons/terminal.svg" width="15" height="15" /> Core Languages</strong><br>
+  <strong><img src="./icons/terminal.svg" width="15" height="15" /> Mái dầm — Ngôn ngữ chính</strong><br>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
@@ -59,7 +65,7 @@ const developer: EngineerProfile = {
 </p>
 
 <p>
-  <strong><img src="./icons/server.svg" width="15" height="15" /> Backend & System Architecture</strong><br>
+  <strong><img src="./icons/server.svg" width="15" height="15" /> Thân ghe — Backend & kiến trúc hệ thống</strong><br>
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" />
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" />
@@ -67,7 +73,7 @@ const developer: EngineerProfile = {
 </p>
 
 <p>
-  <strong><img src="./icons/layout.svg" width="15" height="15" /> Frontend & UI Engineering</strong><br>
+  <strong><img src="./icons/layout.svg" width="15" height="15" /> Mui ghe — Frontend & giao diện</strong><br>
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
   <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
@@ -75,7 +81,7 @@ const developer: EngineerProfile = {
 </p>
 
 <p>
-  <strong><img src="./icons/database.svg" width="15" height="15" /> Database & DevOps</strong><br>
+  <strong><img src="./icons/database.svg" width="15" height="15" /> Khoang chứa — Database & DevOps</strong><br>
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white" />
@@ -83,7 +89,7 @@ const developer: EngineerProfile = {
 </p>
 
 <p>
-  <strong><img src="./icons/cpu.svg" width="15" height="15" /> AI & Machine Learning</strong><br>
+  <strong><img src="./icons/cpu.svg" width="15" height="15" /> Tay lưới — AI & Machine Learning</strong><br>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
@@ -95,13 +101,16 @@ const developer: EngineerProfile = {
   <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 
-## <img src="./icons/rocket.svg" width="22" height="22" /> Flagship Engineering Projects
+## 🌾 Mấy mùa vụ đã gặt
+
+<p><em>Mỗi dự án như một mùa vụ: có lúc nắng, lúc mưa, nhưng gặt về rồi là thấy thương.</em></p>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./icons/ticket.svg" width="18" height="18" /> CineBook Cinema Platform</h3>
-      <p>High-fidelity, interactive platform designed for cinema ticketing. Architected for <strong>high-concurrency ticket reservations</strong> with <strong>Redis Redlock distributed locking</strong> and automated AI chatbot integration.</p>
+      <h3><img src="./icons/ticket.svg" width="18" height="18" /> CineBook — Đặt vé xem phim</h3>
+      <p><em>🛶 Chuyện kể: Bến đò chiều 30 Tết, ai cũng giành lên đò cho kịp về nhà. Bài toán ở đây là làm sao hai người không ngồi chung một ghế.</em></p>
+      <p>Nền tảng đặt vé rạp phim, chịu được <strong>nhiều người giành cùng một ghế một lúc</strong> nhờ <strong>khóa phân tán Redis Redlock</strong>, có thêm chatbot AI trả lời khách.</p>
       <p>
         <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
         <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
@@ -109,12 +118,13 @@ const developer: EngineerProfile = {
       </p>
       <p>
         <a href="https://github.com/Thien21112005/cinebook-ui-kit"><img src="https://img.shields.io/github/stars/Thien21112005/cinebook-ui-kit?style=social&label=Star" /></a>
-        <img src="https://img.shields.io/github/last-commit/Thien21112005/cinebook-ui-kit?style=flat-square&color=38B2AC&label=last+commit" />
+        <img src="https://img.shields.io/github/last-commit/Thien21112005/cinebook-ui-kit?style=flat-square&color=0F766E&label=last+commit" />
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./icons/hotel.svg" width="18" height="18" /> MayVang Hotel Platform</h3>
-      <p>Full-stack hotel reservation and property management platform. Built with a <strong>decoupled micro-architecture</strong> separating Java Spring Boot backend and dynamic frontend client.</p>
+      <h3><img src="./icons/hotel.svg" width="18" height="18" /> MayVang — Đặt phòng khách sạn</h3>
+      <p><em>🏡 Chuyện kể: Nhà vườn miền Tây hay tách nhà trên tiếp khách với nhà sau nấu bếp. Mỗi bên lo việc của mình, mà vẫn chung một mái nhà.</em></p>
+      <p>Hệ thống đặt phòng và quản lý khách sạn full-stack, <strong>tách riêng backend Java Spring Boot và frontend</strong> để mỗi phần phát triển, sửa chữa độc lập.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
         <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
@@ -129,8 +139,9 @@ const developer: EngineerProfile = {
 
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./icons/sparkles.svg" width="18" height="18" /> Sentiment Analysis AI</h3>
-      <p>Machine Learning classification system for text sentiment. End-to-end architecture from data preprocessing and feature extraction to model evaluation and decoupled inference API.</p>
+      <h3><img src="./icons/sparkles.svg" width="18" height="18" /> Sentiment Analysis — Đọc vị cảm xúc</h3>
+      <p><em>💬 Chuyện kể: Má nghe giọng con qua điện thoại là biết con đang vui hay buồn. Mô hình này tập làm điều đó, mà là với câu chữ.</em></p>
+      <p>Hệ thống machine learning phân loại cảm xúc văn bản, làm trọn từ <strong>tiền xử lý dữ liệu, trích xuất đặc trưng, đánh giá mô hình</strong> tới <strong>API suy luận tách riêng</strong>.</p>
       <p>
         <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
         <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
@@ -142,46 +153,49 @@ const developer: EngineerProfile = {
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./icons/gamepad.svg" width="18" height="18" /> Heuristic Caro AI Engine</h3>
-      <p>Intelligent Game Agent capable of playing Gomoku (Caro) on NxN board. Applies <strong>Heuristic Search algorithms</strong> and <strong>Alpha-Beta Pruning</strong> for real-time strategic decision making.</p>
+      <h3><img src="./icons/gamepad.svg" width="18" height="18" /> Caro AI — Cờ caro dưới gốc dừa</h3>
+      <p><em>🌴 Chuyện kể: Hồi nhỏ ngồi gốc dừa đánh caro với tụi nhỏ trong xóm, đứa nào tính trước được vài nước là thắng. Giờ mình dạy máy làm y vậy.</em></p>
+      <p>Tác tử chơi Gomoku (Caro) trên bàn cờ NxN, dùng <strong>tìm kiếm heuristic</strong> và <strong>cắt tỉa Alpha-Beta</strong> để ra quyết định theo thời gian thực.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
         <img src="https://img.shields.io/badge/AI_Algorithms-1F8ACB?style=flat-square" />
       </p>
       <p>
         <a href="https://github.com/Thien21112005/heuristic-caro-nxn"><img src="https://img.shields.io/github/stars/Thien21112005/heuristic-caro-nxn?style=social&label=Star" /></a>
-        <img src="https://img.shields.io/github/last-commit/Thien21112005/heuristic-caro-nxn?style=flat-square&color=38B2AC&label=last+commit" />
+        <img src="https://img.shields.io/github/last-commit/Thien21112005/heuristic-caro-nxn?style=flat-square&color=0F766E&label=last+commit" />
       </p>
     </td>
   </tr>
 </table>
 
-### Archive & Auxiliary Projects
+### 🏺 Mấy món nhỏ cất trong lu
 
-| Project | Tech Stack | Focus & Highlights | Repository |
+| Dự án | Đồ nghề | Có gì hay | Ghé xem |
 | :--- | :--- | :--- | :--- |
-| **Folder Locker** | `C#` `.NET` | Local filesystem encryption & security utility | [Explore Repo →](https://github.com/Thien21112005/folder-locker) |
-| **VietTech E-commerce** | `Web Tech` `JavaScript` | Full-cycle e-commerce store with catalog & cart | [Explore Repo →](https://github.com/Thien21112005/viettech-ecommerce) |
-| **TickTick App Clone** | `Java` `Desktop` | Productivity task scheduler and habit tracker | [Explore Repo →](https://github.com/Thien21112005/ticktick-app) |
-| **Calculator App** | `Java` `UI` | Multi-mode functional arithmetic calculator | [Explore Repo →](https://github.com/Thien21112005/calculator-app) |
+| **Folder Locker** | `C#` `.NET` | Khóa và mã hóa thư mục trên máy, giữ đồ riêng cho kỹ | [Ghé xem →](https://github.com/Thien21112005/folder-locker) |
+| **VietTech E-commerce** | `Web Tech` `JavaScript` | Cửa hàng online đủ vòng: danh mục, giỏ hàng, đặt mua | [Ghé xem →](https://github.com/Thien21112005/viettech-ecommerce) |
+| **TickTick App Clone** | `Java` `Desktop` | Ghi việc cần làm và theo dõi thói quen mỗi ngày | [Ghé xem →](https://github.com/Thien21112005/ticktick-app) |
+| **Calculator App** | `Java` `UI` | Máy tính nhiều chế độ, nhỏ mà có võ | [Ghé xem →](https://github.com/Thien21112005/calculator-app) |
 
 <div align="center">
   <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
 </div>
 
-## <img src="./icons/bar-chart.svg" width="22" height="22" /> Engineering Activity & Metrics
+## 📒 Sổ tay ghi chép mùa màng
+
+<p><em>Nhà nông có cuốn sổ ghi mùa màng, dân code thì có mấy tấm biểu đồ này:</em></p>
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Thien21112005&show_icons=true&theme=tokyonight&hide_border=true" alt="Thien's GitHub stats" width="48.5%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&theme=tokyonight&hide_border=true" alt="Thien's GitHub Streak" width="48.5%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Thien21112005&show_icons=true&hide_border=true&bg_color=F0FDF4&title_color=0F766E&icon_color=65A30D&text_color=1F2937" alt="Thien's GitHub stats" width="48.5%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&hide_border=true&background=F0FDF4&ring=0F766E&fire=D97706&currStreakLabel=0F766E&sideLabels=0F766E&currStreakNum=1F2937&sideNums=1F2937&dates=64748B&stroke=A7F3D0" alt="Thien's GitHub Streak" width="48.5%" />
   <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Thien21112005&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="60%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Thien21112005&layout=compact&hide_border=true&bg_color=F0FDF4&title_color=0F766E&text_color=1F2937" alt="Top Languages" width="60%" />
 </div>
 
 <br>
 
 <div align="center">
-  <!-- Option 1: Contribution Snake -->
+  <p><em>🐍 Con rắn bò dọc bờ ruộng commit</em></p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/output/github-contribution-grid-snake.svg">
@@ -190,7 +204,7 @@ const developer: EngineerProfile = {
 </div>
 
 <div align="center">
-  <!-- Option 2: 3D Isometric Contribution Skyline -->
+  <p><em>🌱 Vườn commit nhìn từ trên cao</em></p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-night-rainbow.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-green-animate.svg">
@@ -199,12 +213,9 @@ const developer: EngineerProfile = {
 </div>
 
 <div align="center">
-  <!-- Option 3: Coding Mascot (Bongo Cat) -->
   <br>
   <img src="https://raw.githubusercontent.com/gist/krushndayshmookh/9fb70798bb71b38fd7ec9cee788b8c7c/raw/4d74ce241b1a24864bbf9ea1733f8f142490a5c6/bongo-cat.gif" width="280" alt="Bongo Cat Typing" />
-  <p><em>Always learning, always building, and turning ideas into code!</em></p>
-</div>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=11,19,25&height=100&section=footer" />
+  <p><em>Code đều tay như chèo xuồng: chậm mà chắc, đi hoài cũng tới.</em></p>
+  <br>
+  <img src="./decorations/footer-sunset.svg" width="100%" alt="Chiều về trên sông — Cảm ơn bạn đã ghé xứ dừa" />
 </div>

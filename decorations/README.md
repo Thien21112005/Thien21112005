@@ -24,6 +24,10 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Sông chính chia nhánh nhiều hướng (rạch, kênh nhỏ, cù lao) với bãi phù sa, bờ bùn và mặt nước lấp lánh trôi theo dòng.
    - Hai cây dừa thân cong vươn ra sông, mảnh đất với rặng tre, nhà lá mái dừa nước, cầu khỉ bắc qua rạch, xuồng ba lá, đàn vịt lội nước, từng đám lục bình hoa tím và trái dừa khô trôi.
 
+4. **`decorations/footer-sunset.svg`** — **Footer hoàng hôn trên sông:**
+   - Chiều tím hồng, mặt trời lặn in bóng lung linh trên sông, rặng dừa xa và hai cây dừa đổ bóng hai bên.
+   - Xuồng ba lá chèo về, đàn cò bay về tổ, lời chào *"Cảm ơn bạn đã ghé xứ dừa chơi nha!"*.
+
 ---
 
 ## 📐 Cách nhúng vào README.md

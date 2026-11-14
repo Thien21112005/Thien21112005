@@ -1,0 +1,36 @@
+name: Ruong-Commit
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/ruong_commit.py
+      - .github/workflows/ruong-commit.yml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: draw-ruong-commit
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Vẽ ruộng commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/ruong_commit.py --user "${{ github.repository_owner }}" --out generated/ruong-commit.svg
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add generated/ruong-commit.svg
+          git commit -m "chore: generated ruong-commit" || exit 0
+          git pull --rebase
+          git push

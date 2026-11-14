@@ -204,17 +204,13 @@ const thien = {
 </div>
 
 <div align="center">
-  <p><em>🌱 Vườn commit nhìn từ trên cao</em></p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-night-rainbow.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-green-animate.svg">
-    <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/Thien21112005/Thien21112005/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
-  </picture>
+  <p><em>🌾 Ruộng commit: mỗi ô là một ngày, lúa tự lớn theo số commit (vẽ lại mỗi ngày)</em></p>
+  <img src="./generated/ruong-commit.svg" width="100%" alt="Ruộng commit một năm qua" />
 </div>
 
 <div align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/gist/krushndayshmookh/9fb70798bb71b38fd7ec9cee788b8c7c/raw/4d74ce241b1a24864bbf9ea1733f8f142490a5c6/bongo-cat.gif" width="280" alt="Bongo Cat Typing" />
+  <img src="./decorations/vong-dua-coder.svg" width="400" alt="Nằm võng dưới gốc dừa gõ code" />
   <p><em>Code đều tay như chèo xuồng: chậm mà chắc, đi hoài cũng tới.</em></p>
   <br>
   <img src="./decorations/footer-sunset.svg" width="100%" alt="Chiều về trên sông — Cảm ơn bạn đã ghé xứ dừa" />

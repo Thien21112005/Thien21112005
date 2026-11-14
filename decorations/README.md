@@ -28,6 +28,14 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Chiều tím hồng, mặt trời lặn in bóng lung linh trên sông, rặng dừa xa và hai cây dừa đổ bóng hai bên.
    - Xuồng ba lá chèo về, đàn cò bay về tổ, lời chào *"Cảm ơn bạn đã ghé xứ dừa chơi nha!"*.
 
+5. **`decorations/vong-dua-coder.svg`** — **Nằm võng dưới gốc dừa gõ code:**
+   - Người con miền Tây đội nón lá ngồi võng sọc đung đưa, gõ laptop (logo trái dừa), ký hiệu code bay lên như khói.
+   - Ly cà phê sữa đá trên ghế đẩu, chó vàng ngủ khò dưới võng, gà mái dẫn con đi kiếm ăn.
+
+6. **`generated/ruong-commit.svg`** — **Ruộng commit (tự vẽ lại mỗi ngày):**
+   - Script `scripts/ruong_commit.py` + workflow `ruong-commit.yml` lấy lịch đóng góp GitHub, mỗi ngày là một ô ruộng: ruộng nước → mạ non → lúa xanh → trổ bông → lúa chín.
+   - Bảng gỗ ghi mùa vụ (tổng đóng góp, chuỗi ngày dài nhất, ngày bội thu), bao lúa ngôn ngữ theo số commit, cò trắng đứng ruộng, người gánh lúa.
+
 ---
 
 ## 📐 Cách nhúng vào README.md

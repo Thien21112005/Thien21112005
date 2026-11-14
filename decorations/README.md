@@ -11,7 +11,8 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - **Cây dừa Bến Tre cổ thụ:** Thân dừa uốn lượn có từng ngấn vòng sinh trưởng, bẹ xơ dừa, quầy dừa xiêm trĩu quả xanh mướt, tán lá xòe rộng tả từng phiến lá đung đưa trong gió chiều.
    - **Xuồng ba lá truyền thống:** Thân gỗ ghép 3 tấm ván theo đúng lối đóng xuồng miền Tây, các thanh cong xuồng bên trong lòng, chùm dừa tươi trên mũi, người lái mặc áo bà ba nâu, đội nón lá chèo xuồng rẽ sóng phù sa.
    - **Cây cầu khỉ chênh vênh:** Bắt chéo chân tre chữ X, một thân tre uốn cong lắt lẻo và tay vịn mộc mạc, bóng cô gái áo bà ba đội nón lá nhẹ bước qua cầu.
-   - **Rặng dừa nước & thiên nhiên:** Dừa nước ven bờ đâm chồi, đàn cò trắng sải cánh bay về tổ trên nền hoàng hôn rực rỡ, khóm hoa lục bình tím ngát trôi sông.
+   - **Sông nước & thiên nhiên:** Đàn cò trắng sải cánh ở góc trời, hàng quạt điện gió quay xa xa ngoài biển, bờ bên kia rặng dừa và nhà lá mái dừa nước (nhà trệt, vách ván), bờ đất gần với rặng tre đung đưa.
+   - **Mặt nước sống động:** Gợn sóng lấp lánh trôi theo dòng, vệt nắng trên sông, bóng cây in nước; từng đám lục bình hoa tím, trái dừa khô và đàn vịt nổi lội trên sông.
    - **Bảng chữ vinh danh:** *"KÝ ỨC NGƯỜI CON XỨ DỪA — Code from the Mekong — Bến Tre, Việt Nam"*.
 
 2. **`decorations/sampan.svg`** — **Điểm nhấn Xuồng Ba Lá (About Me Mascot):**
@@ -20,8 +21,8 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Hiệu ứng động nhấp nhô nhẹ nhàng trên mặt nước cùng hoa lục bình tím nở nhụy vàng.
 
 3. **`decorations/river-meander.svg`** — **Đường phân cách dòng sông phù sa:**
-   - Dòng sông Mê Kông uốn lượn mang dòng nước phù sa trôi êm đềm (animated stream flow).
-   - Điểm xuyết cây dừa nghiêng bóng, rặng dừa nước xanh tươi, cầu khỉ bắc qua rạch, xuồng ba lá lướt nhẹ, bụi cỏ lau và khóm lục bình trôi dạt.
+   - Sông chính chia nhánh nhiều hướng (rạch, kênh nhỏ, cù lao) với bãi phù sa, bờ bùn và mặt nước lấp lánh trôi theo dòng.
+   - Hai cây dừa thân cong vươn ra sông, mảnh đất với rặng tre, nhà lá mái dừa nước, cầu khỉ bắc qua rạch, xuồng ba lá, đàn vịt lội nước, từng đám lục bình hoa tím và trái dừa khô trôi.
 
 ---
 

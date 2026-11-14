@@ -186,10 +186,7 @@ const thien = {
 <p><em>Nhà nông có cuốn sổ ghi mùa màng, dân code thì có mấy tấm biểu đồ này:</em></p>
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Thien21112005&show_icons=true&hide_border=true&bg_color=F0FDF4&title_color=0F766E&icon_color=65A30D&text_color=1F2937" alt="Thien's GitHub stats" width="48.5%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&hide_border=true&background=F0FDF4&ring=0F766E&fire=D97706&currStreakLabel=0F766E&sideLabels=0F766E&currStreakNum=1F2937&sideNums=1F2937&dates=64748B&stroke=A7F3D0" alt="Thien's GitHub Streak" width="48.5%" />
-  <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Thien21112005&layout=compact&hide_border=true&bg_color=F0FDF4&title_color=0F766E&text_color=1F2937" alt="Top Languages" width="60%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Thien21112005&hide_border=true&background=F0FDF4&ring=0F766E&fire=D97706&currStreakLabel=0F766E&sideLabels=0F766E&currStreakNum=1F2937&sideNums=1F2937&dates=64748B&stroke=A7F3D0" alt="Thien's GitHub Streak" width="60%" />
 </div>
 
 <br>

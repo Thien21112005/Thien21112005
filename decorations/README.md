@@ -41,6 +41,14 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Chân dung người đội nón lá bên bờ sông, dừa và dừa nước phía sau; bên phải là đoạn code giới thiệu tô màu, con trỏ nhấp nháy.
    - Nhành lá dừa đung đưa góc trên, khóm lục bình góc dưới.
 
+8. **`decorations/cau-rach-mieu.svg`** — **Cầu Rạch Miễu trên sông Tiền:**
+   - Cầu dây văng hai trụ tháp, dây cáp xòe hình quạt, nhịp dẫn dài trên các trụ; xe hơi, xe buýt, xe máy chạy qua cầu.
+   - Ghe chở hàng chạy dưới cầu, người đội nón lá ngồi ghế đẩu câu cá dưới gốc dừa, phao nhấp nhô, cá thỉnh thoảng nhảy lên.
+
+9. **`decorations/lu-nuoc.svg`** — **Hàng lu nước dưới mái lá:**
+   - Bốn cái lu men nâu viền vàng kiểu lu Biên Hòa, mỗi lu ghi tên một dự án nhỏ; gáo dừa trên nắp, lu không nắp có nước lấp lánh.
+   - Gà mái dẫn con, chậu bông, nhành lá dừa đung đưa.
+
 ---
 
 ## 📐 Cách nhúng vào README.md

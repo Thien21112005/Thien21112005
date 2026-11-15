@@ -86,7 +86,7 @@
 </div>
 
 <div align="center">
-  <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
+  <img src="./decorations/cau-rach-mieu.svg" width="100%" alt="Cầu Rạch Miễu nối đôi bờ sông Tiền, người ngồi câu cá dưới gốc dừa" />
 </div>
 
 ## 🌾 Mấy mùa vụ đã gặt
@@ -157,6 +157,10 @@
 </table>
 
 ### 🏺 Mấy món nhỏ cất trong lu
+
+<div align="center">
+  <img src="./decorations/lu-nuoc.svg" width="90%" alt="Hàng lu nước dưới mái lá, mỗi lu cất một dự án nhỏ" />
+</div>
 
 | Dự án | Đồ nghề | Có gì hay | Ghé xem |
 | :--- | :--- | :--- | :--- |

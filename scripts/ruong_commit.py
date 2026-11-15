@@ -403,7 +403,7 @@ def canal(y, x1, rnd):
                  f'<circle cx="-5.6" cy="-8" r="2.4" fill="{"#5C4033" if col != "#F8FAFC" else "#F8FAFC"}"/>'
                  '<path d="M-7.6,-8.4 L-10,-7.6 L-7.6,-7 Z" fill="#F59E0B"/></g></g>')
     # a coconut palm on the far bank and grass along the near bank
-    o.append(palm(650, y - 14, 56, -10, .62, rnd))
+    o.append(palm(16, y - 12, 50, 8, .6, rnd))
     tf = "".join(f"M{F(gx)},{F(y+20)}l-2,-6M{F(gx)},{F(y+20)}l0,-7M{F(gx)},{F(y+20)}l2,-6" for gx in range(12, x1, 26))
     o.append(f'<path d="{tf}" stroke="#4D7C0F" stroke-width="1" stroke-linecap="round"/>')
     return "".join(o)
@@ -627,14 +627,29 @@ def render(user):
 
     # legend
     ly = fy + 50
-    o.append(f'<text x="70" y="{ly+14}" font-family="Arial, sans-serif" font-size="13" fill="#1F4D2B" font-weight="bold">Ít</text>')
+    o.append(f'<text x="70" y="{ly+9}" font-family="Arial, sans-serif" font-size="13" fill="#1F4D2B" font-weight="bold">Ít</text>')
     names = ["Ruộng nước", "Mạ non", "Lúa xanh", "Trổ bông", "Lúa chín"]
     lx = 92
+    lrnd = random.Random(21)
+    lw, lh = 26, 26
     for lv in range(5):
-        o.append(f'<path d="M{lx+sk},{ly} L{lx+cw+sk},{ly} L{lx+cw},{ly+18} L{lx},{ly+18} Z" fill="{fills[lv]}" stroke="#8A6A3A" stroke-width="1.5"/>')
-        o.append(f'<text x="{lx+cw+sk+6}" y="{ly+14}" font-family="Arial, sans-serif" font-size="12" fill="#1F2937">{names[lv]}</text>')
-        lx += 112
-    o.append(f'<text x="{lx}" y="{ly+14}" font-family="Arial, sans-serif" font-size="13" fill="#1F4D2B" font-weight="bold">Nhiều</text>')
+        top = ly - 9
+        o.append(f'<path d="M{lx+sk-3},{top-3} L{lx+lw+sk+3},{top-3} L{lx+lw+3},{top+lh+3} L{lx-3},{top+lh+3} Z" fill="#8A6A3A"/>')
+        o.append(f'<path d="M{lx+sk},{top} L{lx+lw+sk},{top} L{lx+lw},{top+lh} L{lx},{top+lh} Z" fill="{fills[lv]}"/>')
+        if lv == 0:
+            o.append(f'<path d="M{lx+8},{top+8} l9,0 M{lx+5},{top+17} l7,0" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".8"/>')
+        else:
+            bl, st, gr, sh = {}, [], {}, []
+            for k in range(2):
+                rice_clump(lx + sk * .45 + lw * (k + 1) / 3, top + lh * .8, lv, lrnd, bl, st, gr, sh)
+            o.append(f'<path d="{"".join(sh)}" fill="#1F4D2B" opacity=".22"/>')
+            o.append("".join(f'<path d="{"".join(v)}" fill="{c}"/>' for c, v in bl.items()))
+            if st:
+                o.append(f'<path d="{"".join(st)}" stroke="#8A7A2A" stroke-width=".7" stroke-linecap="round"/>')
+            o.append("".join(f'<path d="{"".join(v)}" fill="{c}"/>' for c, v in gr.items()))
+        o.append(f'<text x="{lx+lw+sk+8}" y="{ly+9}" font-family="Arial, sans-serif" font-size="12.5" fill="#1F2937">{names[lv]}</text>')
+        lx += 120
+    o.append(f'<text x="{lx+4}" y="{ly+9}" font-family="Arial, sans-serif" font-size="13" fill="#1F4D2B" font-weight="bold">Nhiều</text>')
 
     # language harvest: rice sacks
     o.append(canal(fy + 150, 690, rnd))

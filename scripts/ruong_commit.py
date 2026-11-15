@@ -409,6 +409,59 @@ def canal(y, x1, rnd):
     return "".join(o)
 
 
+BLADE_COLS = {1: ["#5FAE3A", "#4E9A2E", "#6CBB45"],
+              2: ["#4E9A2E", "#3F8A2C", "#62B03C", "#57A534"],
+              3: ["#3F8A2C", "#2F7A24", "#5AA83A", "#4B9530"],
+              4: ["#C9A23A", "#B58A1E", "#D9B84E", "#A8902E"]}
+BLADE_H = {1: 8, 2: 12, 3: 14, 4: 14}
+GRAIN_COL = {3: ["#C8D86A", "#B5CC55"], 4: ["#F2C744", "#E5B12E", "#F7D865"]}
+
+
+def rice_clump(bx, by, lv, rnd, blades, stems, grains, shadows):
+    """Một bụi lúa: lá thon nhọn cong ra, bông lúa rủ hạt khi trổ/chín."""
+    shadows.append(f"M{F(bx-3.4)},{F(by)}a3.4,1.1 0 1,0 6.8,0a3.4,1.1 0 1,0 -6.8,0Z")
+    nb = {1: 3, 2: 5, 3: 6, 4: 6}[lv]
+    H = BLADE_H[lv]
+    for j in range(nb):
+        u = j / (nb - 1) - 0.5
+        a = math.radians(u * 78 + rnd.uniform(-7, 7))
+        L = H * rnd.uniform(.78, 1.08) * (1 - 0.22 * abs(u) * 2)
+        sx, cx = math.sin(a), math.cos(a)
+        tipx = bx + sx * L * 1.15
+        tipy = by - cx * L + abs(sx) * L * 0.35
+        cxl = bx + sx * L * 0.45
+        cyl = by - cx * L * 0.75
+        w = 1.1 if lv > 1 else 0.9
+        path = (f"M{F(bx-w)},{F(by)}Q{F(cxl-w*.6)},{F(cyl)} {F(tipx)},{F(tipy)}"
+                f"Q{F(cxl+w*.6)},{F(cyl)} {F(bx+w)},{F(by)}Z")
+        blades.setdefault(rnd.choice(BLADE_COLS[lv]), []).append(path)
+    if lv >= 3:
+        for k in range(1 if lv == 3 else 2):
+            side = rnd.choice([-1, 1])
+            tx = bx + side * rnd.uniform(.5, 2)
+            ty = by - H * rnd.uniform(1.0, 1.12)
+            droop = 5.5 if lv == 4 else 3.2
+            p1 = (tx + side * 3.5, ty - 1.2)
+            p2 = (tx + side * 6.5, ty + droop)
+            stems.append(f"M{F(bx)},{F(by)}Q{F(bx)},{F(ty+3)} {F(tx)},{F(ty)}Q{F(p1[0])},{F(p1[1])} {F(p2[0])},{F(p2[1])}")
+            for i in range(6):
+                t = 0.15 + i * 0.16
+                gx = (1 - t) ** 2 * tx + 2 * (1 - t) * t * p1[0] + t * t * p2[0]
+                gy = (1 - t) ** 2 * ty + 2 * (1 - t) * t * p1[1] + t * t * p2[1]
+                dx = 2 * (1 - t) * (p1[0] - tx) + 2 * t * (p2[0] - p1[0])
+                dy = 2 * (1 - t) * (p1[1] - ty) + 2 * t * (p2[1] - p1[1])
+                m = math.hypot(dx, dy) or 1
+                dx, dy = dx / m, dy / m
+                off = 0.9 if i % 2 else -0.9
+                gx += -dy * off
+                gy += dx * off
+                rx, ry = 1.25, 0.72
+                deg = math.degrees(math.atan2(dy, dx))
+                grains.setdefault(rnd.choice(GRAIN_COL[lv]), []).append(
+                    f"M{F(gx-dx*rx)},{F(gy-dy*rx)}a{rx},{ry} {F(deg)} 1,0 {F(2*dx*rx)},{F(2*dy*rx)}"
+                    f"a{rx},{ry} {F(deg)} 1,0 {F(-2*dx*rx)},{F(-2*dy*rx)}Z")
+
+
 # ---------------------------------------------------------------------------
 def render(user):
     cc = user["contributionsCollection"]
@@ -486,10 +539,11 @@ def render(user):
     x0, y0 = 70, 214
     o.append(f'<path d="M{x0-10+7*sk},{y0-6} L{x0+len(weeks)*cw+7*sk+6},{y0-6} L{x0+len(weeks)*cw+8},{y0+7*rh+6} L{x0-16},{y0+7*rh+6} Z" fill="#8A6A3A"/>')
     tiles = {0: [], 1: [], 2: [], 3: [], 4: []}
-    tufts = [[] for _ in range(7)]
-    heads = [[] for _ in range(7)]
     water_cells = []
-    TUFT = {1: (2, 5, "#7CC046"), 2: (3, 8, "#4E9A2E"), 3: (3, 11, "#3F8A2C"), 4: (4, 12, "#B58A1E")}
+    blades = [dict() for _ in range(7)]   # fill colour -> [paths]
+    stems = [[] for _ in range(7)]
+    grains = [dict() for _ in range(7)]
+    shadows = [[] for _ in range(7)]
     for wi, w in enumerate(weeks):
         for d in w["contributionDays"]:
             di = dt.date.fromisoformat(d["date"]).isoweekday() % 7  # Sunday=0
@@ -502,18 +556,11 @@ def render(user):
             if lv == 0:
                 water_cells.append((wi, di, xl, yt))
                 continue
-            n, h, col = TUFT[lv]
+            n = 2 if lv == 1 else 3
             for k in range(n):
                 cx = xl + cw * (k + 1) / (n + 1) - sk * 0.55 + rnd.uniform(-1, 1)
-                cy = yt + rh * 0.72 + rnd.uniform(-2, 2)
-                hh = h * rnd.uniform(.85, 1.1)
-                tufts[di].append((col, f"M{F(cx)},{F(cy)}Q{F(cx-2)},{F(cy-hh*.6)} {F(cx-3.6)},{F(cy-hh)}"
-                                       f"M{F(cx)},{F(cy)}L{F(cx+.3)},{F(cy-hh-1)}"
-                                       f"M{F(cx)},{F(cy)}Q{F(cx+2)},{F(cy-hh*.6)} {F(cx+3.6)},{F(cy-hh)}"))
-                if lv >= 3:
-                    hc = "#E9C24A" if lv == 4 else "#C9D86B"
-                    heads[di].append((hc, f"M{F(cx+.3)},{F(cy-hh-1)}Q{F(cx+3)},{F(cy-hh-1)} {F(cx+3.5)},{F(cy-hh+3)}"
-                                          f"M{F(cx-3.6)},{F(cy-hh)}Q{F(cx-5.5)},{F(cy-hh)} {F(cx-5.8)},{F(cy-hh+3)}"))
+                cy = yt + rh * 0.74 + rnd.uniform(-1.5, 1.5)
+                rice_clump(cx, cy, lv, rnd, blades[di], stems[di], grains[di], shadows[di])
     fills = {0: "url(#water)", 1: "#B5D98C", 2: "#93C76A", 3: "#78B552", 4: "#D8C060"}
     for lv in range(5):
         if tiles[lv]:
@@ -527,17 +574,14 @@ def render(user):
                  f'<animate attributeName="opacity" values=".7;.2;.7" dur="3s" repeatCount="indefinite"/></path>')
     # rice, row by row (back to front) with a gentle breeze
     for di in range(7):
-        if not tufts[di]:
+        if not blades[di]:
             continue
-        base = y0 + di * rh + rh * 0.72
-        by_col = {}
-        for col, d in tufts[di]:
-            by_col.setdefault(col, []).append(d)
-        hb = {}
-        for col, d in heads[di]:
-            hb.setdefault(col, []).append(d)
-        body = "".join(f'<path d="{"".join(v)}" stroke="{c}" stroke-width="1.3" stroke-linecap="round"/>' for c, v in by_col.items())
-        body += "".join(f'<path d="{"".join(v)}" stroke="{c}" stroke-width="2" stroke-linecap="round"/>' for c, v in hb.items())
+        base = y0 + di * rh + rh * 0.74
+        body = f'<path d="{"".join(shadows[di])}" fill="#1F4D2B" opacity=".22"/>'
+        body += "".join(f'<path d="{"".join(v)}" fill="{c}"/>' for c, v in blades[di].items())
+        if stems[di]:
+            body += f'<path d="{"".join(stems[di])}" stroke="#8A7A2A" stroke-width=".7" stroke-linecap="round"/>'
+        body += "".join(f'<path d="{"".join(v)}" fill="{c}"/>' for c, v in grains[di].items())
         o.append(f'<g transform="translate(0,{F(base)})"><g><animateTransform attributeName="transform" type="skewX" '
                  f'values="0;-5;0;3;0" dur="{F(5+di*.25)}s" repeatCount="indefinite"/>'
                  f'<g transform="translate(0,{F(-base)})">{body}</g></g></g>')

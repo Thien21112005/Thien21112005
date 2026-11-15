@@ -36,6 +36,11 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Script `scripts/ruong_commit.py` + workflow `ruong-commit.yml` lấy lịch đóng góp GitHub, mỗi ngày là một ô ruộng: ruộng nước → mạ non → lúa xanh → trổ bông → lúa chín.
    - Bảng gỗ ghi mùa vụ (tổng đóng góp, chuỗi ngày dài nhất, ngày bội thu), bao lúa ngôn ngữ theo số commit, cò trắng đứng ruộng, người gánh lúa.
 
+7. **`decorations/intro-card.svg`** — **Thẻ giới thiệu khung tre:**
+   - Khung tre có mắt đốt, thanh tiêu đề đan tre với 3 nút trái dừa, nền giấy kiểu chiếu đan.
+   - Chân dung người đội nón lá bên bờ sông, dừa và dừa nước phía sau; bên phải là đoạn code giới thiệu tô màu, con trỏ nhấp nháy.
+   - Nhành lá dừa đung đưa góc trên, khóm lục bình góc dưới.
+
 ---
 
 ## 📐 Cách nhúng vào README.md

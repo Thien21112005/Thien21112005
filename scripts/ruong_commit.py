@@ -191,6 +191,169 @@ def hut(x, y, s):
             '<path d="M6,-64 L89,-64" stroke="#5E3F1E" stroke-width="3" stroke-linecap="round"/></g>')
 
 
+def cloud(x, y, s):
+    return (f'<g transform="translate({F(x)},{F(y)}) scale({s})" opacity=".92"><g>'
+            f'<animateTransform attributeName="transform" type="translate" values="0,0;14,0;0,0" dur="40s" repeatCount="indefinite"/>'
+            '<ellipse cx="0" cy="0" rx="34" ry="11" fill="#FFFFFF"/><ellipse cx="-12" cy="-8" rx="16" ry="11" fill="#FFFFFF"/>'
+            '<ellipse cx="10" cy="-11" rx="18" ry="13" fill="#FFFFFF"/><ellipse cx="0" cy="4" rx="30" ry="5" fill="#E0F2FE"/></g></g>')
+
+
+def birds(x, y):
+    o = []
+    for i, (dx, dy, sc) in enumerate(((0, 0, 1), (22, -8, .8), (40, 6, .7), (-20, 10, .65))):
+        up = "M-8,0 Q-4,-5 0,0 Q4,-5 8,0"
+        dn = "M-8,0 Q-4,3 0,0 Q4,3 8,0"
+        o.append(f'<path transform="translate({F(x+dx)},{F(y+dy)}) scale({sc})" d="{up}" stroke="#334155" stroke-width="1.6" stroke-linecap="round">'
+                 f'<animate attributeName="d" values="{up};{dn};{up}" dur="{F(1+i*.15)}s" repeatCount="indefinite"/></path>')
+    return "".join(o)
+
+
+def kite(x, y):
+    return (f'<g transform="translate({x},{y})"><g>'
+            '<animateTransform attributeName="transform" type="rotate" values="-6;6;-6" dur="3s" repeatCount="indefinite"/>'
+            '<path d="M0,-16 L12,0 L0,18 L-12,0 Z" fill="#EF4444" stroke="#7F1D1D" stroke-width=".8"/>'
+            '<path d="M0,-16 L0,18 M-12,0 L12,0" stroke="#FDE047" stroke-width="1"/>'
+            '<path d="M0,18 C-6,26 6,32 -2,40 C-8,46 4,52 -2,58" stroke="#F59E0B" stroke-width="1.2"/>'
+            '<path d="M-3,27 l-4,-2 l1,4 Z M-1,41 l4,-3 l0,5 Z M-2,53 l-4,-1 l2,4 Z" fill="#FDE047"/></g></g>')
+
+
+def kid(x, y):
+    return (f'<g transform="translate({F(x)},{F(y)})">'
+            '<ellipse cx="0" cy="1" rx="7" ry="1.5" fill="#3F2A14" opacity=".25"/>'
+            '<path d="M-2,-8 L-3,0 M2,-8 L3,0" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round"/>'
+            '<path d="M-4,-17 L4,-17 L4.5,-8 L-4.5,-8 Z" fill="#DC2626"/>'
+            '<path d="M3,-15 L6,-20" stroke="#E9B57F" stroke-width="1.6" stroke-linecap="round"/>'
+            '<circle cx="0" cy="-20.5" r="3.6" fill="#1E293B"/><ellipse cx=".6" cy="-20" rx="2.8" ry="3" fill="#E9B57F"/></g>')
+
+
+def scarecrow(x, y):
+    return (f'<g transform="translate({F(x)},{F(y)})">'
+            '<ellipse cx="0" cy="1" rx="9" ry="2" fill="#3F2A14" opacity=".25"/>'
+            '<path d="M0,0 L0,-34 M-14,-24 L14,-24" stroke="#7A4E2D" stroke-width="2" stroke-linecap="round"/>'
+            '<g><animateTransform attributeName="transform" type="rotate" values="-3 0 -30;3 0 -30;-3 0 -30" dur="4s" repeatCount="indefinite"/>'
+            '<path d="M-8,-26 L8,-26 L10,-12 L-10,-12 Z" fill="#2563EB"/>'
+            '<path d="M-14,-24 L-8,-25 M8,-25 L14,-24" stroke="#2563EB" stroke-width="3.5" stroke-linecap="round"/>'
+            '<path d="M-15,-23 l-3,2 M15,-23 l3,2" stroke="#D6B98A" stroke-width="1.2"/>'
+            '<circle cx="0" cy="-31" r="4.5" fill="#E7D2A6" stroke="#A47148" stroke-width=".6"/>'
+            '<path d="M-2,-32 l1,0 M2,-32 l1,0 M-2,-29 Q0,-28 2,-29" stroke="#3F2A14" stroke-width=".8"/>'
+            '<path d="M0,-44 L-11,-34 L11,-34 Z" fill="#FDE68A" stroke="#B4892A" stroke-width=".7"/>'
+            '<path d="M-6,-12 L-7,-8 M6,-12 L7,-8" stroke="#D6B98A" stroke-width="1"/></g></g>')
+
+
+def haystack(x, y, s):
+    return (f'<g transform="translate({F(x)},{F(y)}) scale({s})">'
+            '<ellipse cx="0" cy="2" rx="22" ry="3" fill="#3F2A14" opacity=".2"/>'
+            '<path d="M-20,0 C-20,-20 -8,-34 0,-36 C8,-34 20,-20 20,0 Z" fill="#E2B85A"/>'
+            '<path d="M-14,-6 Q-6,-10 2,-8 M-16,-14 Q-4,-18 8,-15 M-10,-24 Q0,-27 10,-23 M4,-4 Q12,-6 17,-4" stroke="#B4892A" stroke-width="1"/>'
+            '<path d="M0,-36 L0,-44" stroke="#7A4E2D" stroke-width="2" stroke-linecap="round"/></g>')
+
+
+def banana(x, y, s, rnd):
+    leaves = []
+    for ang in (-150, -115, -80, -50, -20, 170):
+        a = math.radians(ang + rnd.uniform(-8, 8))
+        L = 24 * s
+        ex, ey = x + math.cos(a) * L, y - 30 * s + math.sin(a) * L + L * .3
+        cx, cy = x + math.cos(a) * L * .5, y - 30 * s + math.sin(a) * L * .5 - 4 * s
+        nx, ny = -math.sin(a) * 5 * s, math.cos(a) * 5 * s
+        leaves.append(f'<path d="M{F(x)},{F(y-30*s)} Q{F(cx+nx)},{F(cy+ny)} {F(ex)},{F(ey)} Q{F(cx-nx)},{F(cy-ny)} {F(x)},{F(y-30*s)} Z" '
+                      f'fill="{rnd.choice(["#65A30D", "#4D7C0F", "#84CC16"])}" stroke="#3F6212" stroke-width=".6"/>')
+    return (f'<path d="M{F(x)},{F(y)} L{F(x)},{F(y-30*s)}" stroke="#7DA34A" stroke-width="{F(4*s)}" stroke-linecap="round"/>'
+            + "".join(leaves))
+
+
+def dyke_ducks(x, y):
+    o = []
+    for i in range(6):
+        dx = x + i * 15
+        col, wing = (("#F8FAFC", "#CBD5E1") if i % 3 == 1 else ("#B07D4F", "#6B4226"))
+        o.append(f'<g transform="translate({F(dx)},{F(y)})"><g>'
+                 f'<animateTransform attributeName="transform" type="translate" values="0,0;0,-1;0,0" dur=".5s" begin="{F(i*.08)}s" repeatCount="indefinite"/>'
+                 '<path d="M-1,-3 L-1.5,0 M2,-3 L2.5,0" stroke="#F59E0B" stroke-width=".8"/>'
+                 f'<ellipse cx="1" cy="-6" rx="6" ry="3.6" fill="{col}"/>'
+                 f'<path d="M-1,-6.5 Q2,-8 5,-6.5" stroke="{wing}" stroke-width="1.4"/>'
+                 f'<path d="M-4,-7 L-5,-12" stroke="{col}" stroke-width="2.4" stroke-linecap="round"/>'
+                 f'<circle cx="-5" cy="-12.5" r="2.4" fill="{"#5C4033" if i % 3 != 1 else "#F8FAFC"}"/>'
+                 '<path d="M-7,-12.8 L-9.5,-12 L-7,-11.4 Z" fill="#F59E0B"/></g></g>')
+    return "".join(o)
+
+
+def icon_rice(x, y):
+    return (f'<g transform="translate({F(x)},{F(y)})"><path d="M0,10 Q1,0 6,-8" stroke="#A3E635" stroke-width="1.6" fill="none"/>'
+            + "".join(f'<ellipse cx="{F(2+k*1.2)}" cy="{F(2-k*3)}" rx="1.6" ry="2.6" fill="#FDE047" transform="rotate(35 {F(2+k*1.2)} {F(2-k*3)})"/>' for k in range(4))
+            + '<path d="M0,10 Q-4,2 -8,0" stroke="#84CC16" stroke-width="1.4" fill="none"/></g>')
+
+
+def icon_sprout(x, y):
+    return (f'<g transform="translate({F(x)},{F(y)})"><path d="M0,10 L0,-2" stroke="#86EFAC" stroke-width="1.8"/>'
+            '<path d="M0,0 C-8,-2 -9,-9 -2,-9 C-1,-6 0,-3 0,0 Z" fill="#4ADE80"/>'
+            '<path d="M0,-2 C8,-4 9,-11 2,-11 C1,-8 0,-5 0,-2 Z" fill="#22C55E"/>'
+            '<path d="M-6,10 L6,10" stroke="#A47148" stroke-width="2" stroke-linecap="round"/></g>')
+
+
+def icon_sun(x, y):
+    rays = "".join(f"M{F(math.cos(math.radians(a))*7)},{F(math.sin(math.radians(a))*7)}L{F(math.cos(math.radians(a))*10)},{F(math.sin(math.radians(a))*10)}"
+                   for a in range(0, 360, 45))
+    return (f'<g transform="translate({F(x)},{F(y)})"><path d="{rays}" stroke="#FDE047" stroke-width="1.6" stroke-linecap="round"/>'
+            '<circle r="5" fill="#FACC15"/></g>')
+
+
+def signboard(bx, by, cal, cc, longest, current, best):
+    w, h = 398, 150
+    t = by + 18  # board top
+    o = []
+    # posts
+    o.append(f'<path d="M{bx+30},{t} L{bx+32},{by+186} M{bx+w-30},{t} L{bx+w-32},{by+186}" stroke="#5B3A1E" stroke-width="7" stroke-linecap="round"/>')
+    # board planks
+    o.append(f'<rect x="{bx}" y="{t}" width="{w}" height="{h}" rx="6" fill="url(#board)" stroke="#4A2E14" stroke-width="3"/>')
+    o.append(f'<path d="M{bx+4},{t+50}H{bx+w-4}M{bx+4},{t+100}H{bx+w-4}" stroke="#5E3B1C" stroke-width="1.6" opacity=".7"/>')
+    grain = []
+    for k in range(9):
+        gy = t + 10 + k * 16
+        grain.append(f"M{bx+12},{gy} C{bx+90},{gy-3} {bx+180},{gy+3} {bx+260},{gy-1} S{bx+350},{gy+2} {bx+w-12},{gy}")
+    o.append(f'<path d="{"".join(grain)}" stroke="#C99A68" stroke-width=".7" opacity=".35"/>')
+    for (nx, ny) in ((bx + 10, t + 10), (bx + w - 10, t + 10), (bx + 10, t + h - 10), (bx + w - 10, t + h - 10)):
+        o.append(f'<circle cx="{nx}" cy="{ny}" r="2.4" fill="#3B2412"/><circle cx="{nx-.6}" cy="{ny-.6}" r=".8" fill="#D6B98A"/>')
+    # thatched cap
+    o.append(f'<path d="M{bx-16},{t+4} L{bx+20},{by-6} L{bx+w-20},{by-6} L{bx+w+16},{t+4} Z" fill="#B48A50"/>')
+    th = "".join(f"M{bx-10+k*12.6},{t+4} L{bx+22+k*10.8},{by-6}" for k in range(33))
+    o.append(f'<path d="{th}" stroke="#8C6232" stroke-width=".9" opacity=".8"/>')
+    fr = "".join(f"L{bx-16+k*6.65+3},{t+9+(k%3)} L{bx-16+(k+1)*6.65},{t+4}" for k in range(63))
+    o.append(f'<path d="M{bx-16},{t+4}{fr}Z" fill="#8C6232"/>')
+    o.append(f'<path d="M{bx+18},{by-7} L{bx+w-18},{by-7}" stroke="#5E3F1E" stroke-width="3" stroke-linecap="round"/>')
+    # red cloth ribbon with the title
+    cx = bx + w / 2
+    ry = t + 18
+    o.append(f'<path d="M{F(cx-120)},{ry-11} L{F(cx-132)},{ry} L{F(cx-120)},{ry+11} Z M{F(cx+120)},{ry-11} L{F(cx+132)},{ry} L{F(cx+120)},{ry+11} Z" fill="#991B1B"/>')
+    o.append(f'<rect x="{F(cx-112)}" y="{ry-13}" width="224" height="26" rx="3" fill="#DC2626" stroke="#7F1D1D" stroke-width="1.2"/>')
+    o.append(f'<text x="{F(cx)}" y="{ry+5}" text-anchor="middle" font-family="\'Times New Roman\', Georgia, serif" font-size="15" font-weight="bold" letter-spacing="2.5" fill="#FDE047">BẢNG GHI MÙA VỤ</text>')
+    # big total
+    total = f"{cal['totalContributions']:,}".replace(",", ".")
+    o.append(icon_rice(bx + 22, t + 70))
+    o.append(f'<text x="{bx+90}" y="{t+78}" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#FEF3C7" filter="url(#shade)">{total}</text>')
+    o.append(f'<text x="{bx+90}" y="{t+94}" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#FDE68A">lần gieo hạt trong năm</text>')
+    # 2x2 chips
+    chips = [("Commit", cc["totalCommitContributions"]), ("PR", cc["totalPullRequestContributions"]),
+             ("Issue", cc["totalIssueContributions"]), ("Review", cc["totalPullRequestReviewContributions"])]
+    for i, (lab, val) in enumerate(chips):
+        chx = bx + 160 + (i % 2) * 110
+        chy = t + 40 + (i // 2) * 28
+        o.append(f'<rect x="{chx}" y="{chy}" width="102" height="22" rx="11" fill="#5B3A1E" stroke="#C99A68" stroke-width=".8"/>'
+                 f'<text x="{chx+12}" y="{chy+15}" font-family="Arial, sans-serif" font-size="11.5" fill="#FDE68A">{lab}</text>'
+                 f'<text x="{chx+92}" y="{chy+15.5}" text-anchor="end" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFF7ED">{val}</text>')
+    # bottom row with icons
+    bdate = dt.date.fromisoformat(best["date"]).strftime("%d/%m/%Y")
+    cols = [(icon_rice, f"{longest} ngày liền", "Mùa dài nhất"),
+            (icon_sprout, f"{current} ngày", "Đang chăm ruộng"),
+            (icon_sun, bdate, f"Bội thu: {best['contributionCount']} lần")]
+    for i, (ic, val, lab) in enumerate(cols):
+        cx0 = bx + 14 + i * 128
+        o.append(ic(cx0 + 8, t + 122))
+        o.append(f'<text x="{cx0+24}" y="{t+120}" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#FFF7ED" filter="url(#shade)">{esc(val)}</text>'
+                 f'<text x="{cx0+24}" y="{t+136}" font-family="Arial, sans-serif" font-size="10.5" fill="#FDE68A">{esc(lab)}</text>')
+    return "".join(o)
+
+
 # ---------------------------------------------------------------------------
 def render(user):
     cc = user["contributionsCollection"]
@@ -249,31 +412,18 @@ def render(user):
     o.append('<text x="42" y="86" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#1F4D2B">'
              'Mỗi ô ruộng là một ngày — commit càng siêng, lúa càng chín vàng</text>')
 
-    # wooden signboard with the numbers
-    bx, by = 812, 16
-    o.append(f'<path d="M{bx+40},{by+150} L{bx+46},{by+178} M{bx+330},{by+150} L{bx+324},{by+178}" stroke="#5B3A1E" stroke-width="6" stroke-linecap="round"/>')
-    o.append(f'<rect x="{bx}" y="{by}" width="370" height="152" rx="8" fill="url(#board)" stroke="#5B3A1E" stroke-width="3"/>')
-    o.append(f'<path d="M{bx+8},{by+50}H{bx+362}M{bx+8},{by+100}H{bx+362}" stroke="#7A4E2D" stroke-width="1" opacity=".6"/>')
-    lines = [
-        ("Bảng ghi mùa vụ", 17, True),
-        (f"{cal['totalContributions']:,} lần gieo hạt trong năm".replace(",", "."), 15, True),
-        (f"Commit {cc['totalCommitContributions']}  ·  PR {cc['totalPullRequestContributions']}  ·  "
-         f"Issue {cc['totalIssueContributions']}  ·  Review {cc['totalPullRequestReviewContributions']}", 12.5, False),
-        (f"Mùa dài nhất: {longest} ngày liền tay", 13.5, False),
-        (f"Đang chăm ruộng: {current} ngày", 13.5, False),
-        (f"Ngày bội thu: {dt.date.fromisoformat(best['date']).strftime('%d/%m/%Y')} ({best['contributionCount']} lần)", 13.5, False),
-    ]
-    yy = by + 26
-    for t, fs, bold in lines:
-        fw = 'font-weight="bold" ' if bold else ""
-        o.append(f'<text x="{bx+185}" y="{yy}" text-anchor="middle" font-family="Arial, sans-serif" font-size="{fs}" '
-                 f'{fw}fill="#FFF7ED" filter="url(#shade)">{esc(t)}</text>')
-        yy += 23 if fs > 14 else 21
+    # sky details: clouds, birds, kite
+    o.append(cloud(470, 128, 1.0) + cloud(730, 40, .7) + cloud(250, 150, .6))
+    o.append(birds(560, 40))
+    kite_x, kite_y = 760, 112
 
-    # palms + hut beside the field
-    o.append(hut(1050, 196, .55))
-    o.append(palm(30, 400, 150, 22, 1.0, rnd))
-    o.append(palm(1170, 404, 140, -20, 1.0, rnd))
+    # village notice board with a thatched cap
+    o.append(signboard(790, 16, cal, cc, longest, current, best))
+
+    # hut, haystack, banana trees beside the field
+    o.append(banana(560, 200, .9, rnd) + banana(700, 203, 1.0, rnd))
+    o.append(hut(600, 200, .55))
+    o.append(haystack(682, 206, .8))
 
     # ---- the paddy field: 53 weeks x 7 days, oblique perspective ----
     cw, rh, sk = 20, 25, 9
@@ -341,11 +491,32 @@ def render(user):
     for (wi, di, xl, yt) in sorted(picks[:3], key=lambda c: c[1]):
         o.append(egret(xl + cw * 0.4 - sk * .5, yt + rh * 0.75, flip=rnd.random() < .5))
 
+    # scarecrow standing in the middle of the paddies
+    o.append(scarecrow(x0 + 31 * cw + 3 * sk, y0 + 2 * rh + rh * 0.8))
+    # palms framing the field (drawn after it so nothing covers them)
+    o.append(palm(26, 404, 150, 22, 1.0, rnd))
+    o.append(palm(1178, 410, 140, -22, 1.0, rnd))
+
     # front dyke with the farmer, month labels
     fy = y0 + 7 * rh + 6
     o.append(f'<path d="M{x0-20},{fy} L{x0+len(weeks)*cw+12},{fy} L{x0+len(weeks)*cw+12},{fy+10} L{x0-20},{fy+10} Z" fill="#A27B48"/>')
     o.append(f'<path d="M{x0-20},{fy+1} L{x0+len(weeks)*cw+12},{fy+1}" stroke="#6E9C34" stroke-width="2.5"/>')
     o.append(farmer(x0 + len(weeks) * cw * 0.62, fy + 2))
+    # ducks running along the dyke + a kid flying a kite
+    o.append(dyke_ducks(x0 + 120, fy + 3))
+    kid_x = x0 + len(weeks) * cw * 0.42
+    o.append(f'<path d="M{F(kid_x+4)},{F(fy-14)} Q{F((kid_x+kite_x)/2)},{F(fy-60)} {kite_x},{kite_y+18}" stroke="#F8FAFC" stroke-width=".8" opacity=".9"/>')
+    o.append(kid(kid_x, fy + 2))
+    o.append(kite(kite_x, kite_y))
+    # grass tufts & wild flowers along the dyke
+    tf = []
+    fl = []
+    for i in range(70):
+        gx = x0 - 16 + rnd.uniform(0, len(weeks) * cw + 26)
+        tf.append(f"M{F(gx)},{F(fy+1)}l-2,-5M{F(gx)},{F(fy+1)}l0,-6M{F(gx)},{F(fy+1)}l2,-5")
+        if i % 4 == 0:
+            fl.append(f'<circle cx="{F(gx+3)}" cy="{F(fy-3)}" r="1.6" fill="{rnd.choice(["#FDE047", "#F9A8D4", "#FFFFFF"])}"/>')
+    o.append(f'<path d="{"".join(tf)}" stroke="#4D7C0F" stroke-width="1" stroke-linecap="round"/>' + "".join(fl))
     seen = None
     for wi, w in enumerate(weeks):
         m = dt.date.fromisoformat(w["contributionDays"][0]["date"]).month

@@ -30,21 +30,9 @@
 > Giờ mình học Kỹ thuật Phần mềm ở HCMUTE, nhưng cách làm việc thì vẫn giữ nết người miền Tây:
 > **làm cái gì cũng chắc tay, xài được lâu, và chừa chỗ cho người tới sau dễ sửa.**
 
-```typescript
-// nguoi-con-xu-dua.ts — sơ yếu lý lịch kiểu miền Tây
-const thien = {
-  queNha: "Bến Tre — xứ dừa",
-  dangHoc: "Software Engineering @ HCMUTE",
-  nghe: "Full-Stack Developer & Software Engineer",
-  hayMayMo: [
-    "Hệ thống chịu tải cao & khóa phân tán (Redis Redlock)",
-    "Kiến trúc tách lớp gọn gàng, code sạch dễ đọc",
-    "Thuật toán heuristic & machine learning ứng dụng"
-  ],
-  lucRanh: ["Đánh cầu lông", "Đọc sách kỹ thuật", "Vẽ sơ đồ hệ thống"],
-  lienLac: "thien.nnt.211105@gmail.com" // nhắn mình nha, mình rep liền
-};
-```
+<div align="center">
+  <img src="./decorations/intro-card.svg" width="100%" alt="nguoi-con-xu-dua.ts — Bến Tre, xứ dừa · Software Engineering @ HCMUTE · Full-Stack Developer & Software Engineer · Hay mày mò: hệ thống chịu tải cao & khóa phân tán (Redis Redlock), kiến trúc tách lớp gọn gàng, thuật toán heuristic & machine learning · Lúc rảnh: cầu lông, đọc sách kỹ thuật, vẽ sơ đồ hệ thống · thien.nnt.211105@gmail.com" />
+</div>
 
 <div align="center">
   <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />

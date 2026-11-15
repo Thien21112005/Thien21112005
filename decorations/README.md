@@ -51,7 +51,8 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
 
 10. **`decorations/ho-sen.svg`** — **Hồ sen quê nhà:**
    - Hồ sen đầy lá to nhỏ theo xa gần, vài lá vươn cao trên cuống, sen hồng nở và nụ sen, chuồn chuồn bay.
-   - Cây cầu bê tông nhỏ bắc chéo qua hồ, nhóm bạn đứng chụp hình; hàng dừa, trời xanh mây trắng, tàu lá dừa vắt ngang góc.
+   - Cây cầu bê tông nhỏ bắc qua hồ tới khoảnh vườn có chòi lá, chuối, hoa dại; nhóm bạn đứng chụp hình trên cầu.
+   - Hàng dừa dày xen chuối dọc bờ, xuồng hái sen chèo qua lại, sen đung đưa, gợn nước cá đớp, chuồn chuồn và đàn chim bay.
 
 ---
 

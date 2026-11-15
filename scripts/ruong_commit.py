@@ -607,9 +607,9 @@ def render(user):
         for d in w["contributionDays"]:
             if d["date"] == best["date"]:
                 sw, sd = wi, dt.date.fromisoformat(d["date"]).isoweekday() % 7
-    sd = min(sd, 5)  # on the front row it would stand on the farmer; step back one row
+    # feet at 80% of the tile height: the slanted tile has shifted left by 0.8*sk there
     sxl = x0 + sw * cw + (7 - sd) * sk
-    o.append(scarecrow(sxl + cw * 0.5 - sk * 0.5, y0 + sd * rh + rh * 0.8))
+    o.append(scarecrow(sxl + cw * 0.5 - sk * 0.8, y0 + sd * rh + rh * 0.8))
     # beside the field: a grazing buffalo on the left, a banana tree on the right
     o.append(buffalo(40, 382))
     o.append(banana(1172, 404, .8, rnd))

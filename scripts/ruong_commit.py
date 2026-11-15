@@ -582,8 +582,21 @@ def render(user):
     if gl:
         o.append(f'<path d="{"".join(gl)}" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity=".7">'
                  f'<animate attributeName="opacity" values=".7;.2;.7" dur="3s" repeatCount="indefinite"/></path>')
-    # rice, row by row (back to front) with a gentle breeze
+    # scarecrow guards the ripest paddy: the best day of the year (ngày bội thu)
+    sw, sd = 31, 2
+    for wi, w in enumerate(weeks):
+        for d in w["contributionDays"]:
+            if d["date"] == best["date"]:
+                sw, sd = wi, dt.date.fromisoformat(d["date"]).isoweekday() % 7
+    # feet at 80% of the tile height: the slanted tile has shifted left by 0.8*sk there
+    sxl = x0 + sw * cw + (7 - sd) * sk
+    scare = scarecrow(sxl + cw * 0.5 - sk * 0.8, y0 + sd * rh + rh * 0.8)
+
+    # rice, row by row (back to front) with a gentle breeze;
+    # the scarecrow goes in just before its own row so the ripe rice grows in front of it
     for di in range(7):
+        if di == sd:
+            o.append(scare)
         if not blades[di]:
             continue
         base = y0 + di * rh + rh * 0.74
@@ -601,15 +614,6 @@ def render(user):
     for (wi, di, xl, yt) in sorted(picks[:3], key=lambda c: c[1]):
         o.append(egret(xl + cw * 0.4 - sk * .5, yt + rh * 0.75, flip=rnd.random() < .5))
 
-    # scarecrow guards the ripest paddy: the best day of the year (ngày bội thu)
-    sw, sd = 31, 2
-    for wi, w in enumerate(weeks):
-        for d in w["contributionDays"]:
-            if d["date"] == best["date"]:
-                sw, sd = wi, dt.date.fromisoformat(d["date"]).isoweekday() % 7
-    # feet at 80% of the tile height: the slanted tile has shifted left by 0.8*sk there
-    sxl = x0 + sw * cw + (7 - sd) * sk
-    o.append(scarecrow(sxl + cw * 0.5 - sk * 0.8, y0 + sd * rh + rh * 0.8))
     # beside the field: a grazing buffalo on the left, a banana tree on the right
     o.append(buffalo(40, 382))
     o.append(banana(1172, 404, .8, rnd))

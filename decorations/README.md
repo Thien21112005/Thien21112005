@@ -42,7 +42,7 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Nhành lá dừa đung đưa góc trên, khóm lục bình góc dưới.
 
 8. **`decorations/cau-rach-mieu.svg`** — **Cầu Rạch Miễu trên sông Tiền:**
-   - Cầu dây văng hai trụ tháp chữ A trên bệ móng giữa sông, nhiều dây cáp neo rải dọc đỉnh trụ, nhịp dẫn dài trên hàng trụ vuông, nước sông Tiền phù sa nhạt, cồn dừa giữa sông, dãy nhà bè nổi mái tôn phao xanh, lục bình trôi từng đám; xe hơi, xe buýt, xe máy chạy qua cầu.
+   - Cầu dây văng hai trụ tháp chữ A trên bệ móng giữa sông, nhiều dây cáp neo rải dọc đỉnh trụ, nhịp dẫn dài trên hàng trụ vuông, nước sông Tiền phù sa nhạt, cồn dừa giữa sông, dãy nhà bè nổi mái tôn phao xanh, lục bình kết thành từng mảng lớn trôi trên sông; xe hơi, xe buýt, xe máy chạy qua cầu.
    - Xà lan chở cát (thân xanh, vỏ xe đệm hông, cabin trắng mái xanh) và ghe chở hàng chạy dưới cầu, người đội nón lá ngồi ghế đẩu câu cá dưới gốc dừa, phao nhấp nhô, cá thỉnh thoảng nhảy lên.
 
 9. **`decorations/lu-nuoc.svg`** — **Hàng lu nước dưới mái lá:**

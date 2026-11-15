@@ -50,6 +50,7 @@ Hàng dừa xanh ngát trĩu quả, rặng dừa nước ven bờ, cầu khỉ g
    - Gà mái dẫn con, chậu bông, nhành lá dừa đung đưa.
 
 10. **`decorations/ho-sen.svg`** — **Hồ sen quê nhà:**
+   - Chiều tà: mặt trời vàng cam vừa lặn sau hàng dừa, trời tím hồng, mây ửng cam, vệt nắng vàng lấp lánh trên mặt hồ.
    - Hồ sen đầy lá to nhỏ theo xa gần, vài lá vươn cao trên cuống, sen hồng nở và nụ sen, chuồn chuồn bay.
    - Cây cầu bê tông nhỏ bắc qua hồ tới khoảnh vườn có chòi lá, chuối, hoa dại; nhóm bạn đi dạo qua lại trên cầu, giơ điện thoại nhiều hướng, đèn flash chớp chớp.
    - Hàng dừa dày xen chuối dọc bờ, xuồng hái sen chèo qua lại, sen đung đưa, gợn nước cá đớp, chuồn chuồn ớt lượn tới lui khắp hồ, chuồn chuồn kim xanh đậu nụ sen, ếch ngồi lá sen phóng lưỡi đớp hụt khiến chuồn chuồn hoảng loạn bay tứ tung, chuồn chuồn kim nhấp cánh, những đàn bướm nhỏ chập chờn, đàn chim bay.

@@ -354,6 +354,61 @@ def signboard(bx, by, cal, cc, longest, current, best):
     return "".join(o)
 
 
+def buffalo(x, y):
+    """Con trâu gặm cỏ."""
+    return (f'<g transform="translate({F(x)},{F(y)})">'
+            '<ellipse cx="0" cy="2" rx="26" ry="3" fill="#3F2A14" opacity=".25"/>'
+            '<path d="M-12,-10 L-13,0 M-6,-10 L-6,0 M10,-10 L10,0 M15,-10 L16,0" stroke="#334155" stroke-width="3.4" stroke-linecap="round"/>'
+            '<path d="M-17,-14 C-18,-24 -6,-28 8,-27 C18,-26 22,-20 20,-12 C18,-7 -14,-6 -17,-14 Z" fill="#475569"/>'
+            '<path d="M-6,-24 C0,-26 10,-26 16,-23" stroke="#64748B" stroke-width="1.4" opacity=".8"/>'
+            '<path d="M20,-20 Q26,-16 24,-6" stroke="#475569" stroke-width="1.6" fill="none"/><path d="M23,-7 l2,3 l-3,0 Z" fill="#1F2937"/>'
+            '<g><animateTransform attributeName="transform" type="rotate" values="0 -16 -18;6 -16 -18;0 -16 -18" dur="3s" repeatCount="indefinite"/>'
+            '<path d="M-16,-20 C-22,-18 -26,-10 -27,-4 C-25,-1 -21,-1 -19,-4 C-17,-10 -13,-14 -12,-17 Z" fill="#475569"/>'
+            '<ellipse cx="-24" cy="-3" rx="3.4" ry="2.4" fill="#334155"/>'
+            '<path d="M-17,-19 C-24,-26 -30,-22 -26,-17 M-15,-19 C-10,-27 -4,-24 -8,-19" stroke="#E7E5E4" stroke-width="2" stroke-linecap="round" fill="none"/>'
+            '<circle cx="-19" cy="-13" r=".9" fill="#0F172A"/></g>'
+            '<path d="M-30,-1 l-2,-5 M-28,0 l0,-6 M-26,-1 l2,-5" stroke="#4D7C0F" stroke-width="1" stroke-linecap="round"/></g>')
+
+
+def canal(y, x1, rnd):
+    """Con mương nhỏ: xuồng ba lá, vịt bơi, lục bình, cây dừa trên bờ."""
+    o = [f'<path d="M0,{y-16} C150,{y-22} 420,{y-12} {x1},{y-18} L{x1},{y+20} C420,{y+26} 150,{y+16} 0,{y+22} Z" fill="#D9BB7E"/>',
+         f'<path d="M0,{y-11} C150,{y-17} 420,{y-7} {x1},{y-13} L{x1},{y+15} C420,{y+21} 150,{y+11} 0,{y+17} Z" fill="url(#water)"/>',
+         f'<path d="M60,{y} l26,0 M240,{y+6} l30,0 M430,{y-2} l22,0 M600,{y+5} l26,0" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" opacity=".8">'
+         '<animate attributeName="opacity" values=".8;.25;.8" dur="3s" repeatCount="indefinite"/></path>']
+    # lục bình clumps
+    for (lx, ly) in ((150, y + 4), (166, y + 8), (520, y + 2), (536, y + 7)):
+        o.append(f'<g transform="translate({lx},{ly})"><ellipse cx="0" cy="1" rx="9" ry="2.4" fill="#14532D"/>'
+                 '<ellipse cx="-4" cy="-3" rx="4" ry="3.4" fill="#16A34A"/><ellipse cx="3" cy="-4" rx="4" ry="3.6" fill="#22A447"/>'
+                 '<path d="M0,-4 L0,-14" stroke="#4D7C0F" stroke-width="1"/>'
+                 '<circle cx="-1" cy="-11" r="2" fill="#B794F6"/><circle cx="1" cy="-13.5" r="1.8" fill="#C4B5FD"/><circle cx="0" cy="-15.5" r="1.4" fill="#A78BFA"/></g>')
+    # xuồng ba lá
+    o.append(f'<g transform="translate(330,{y+4})"><g>'
+             '<animateTransform attributeName="transform" type="translate" values="0,0;14,-.5;0,0" dur="10s" repeatCount="indefinite"/>'
+             '<path d="M-30,-4 C-12,4 18,4 32,-5 L27,0 C14,6 -12,6 -25,0 Z" fill="#6B3D12"/>'
+             '<path d="M-31,-5 C-12,3 18,3 33,-6" stroke="#E0B54A" stroke-width="1.6" stroke-linecap="round"/>'
+             '<circle cx="-18" cy="-5" r="3" fill="#4D7C0F"/><circle cx="-13" cy="-6" r="2.8" fill="#65A30D"/>'
+             '<path d="M6,-4 L5,-14 L13,-14 L12,-4 Z" fill="#7C4A21"/>'
+             '<circle cx="9" cy="-16" r="3.4" fill="#1E293B"/><ellipse cx="8.2" cy="-15.6" rx="2.6" ry="2.9" fill="#E9B57F"/>'
+             '<path d="M9,-25 L1,-18 L17,-18 Z" fill="#FDE68A" stroke="#B4892A" stroke-width=".7"/>'
+             '<path d="M12,-11 L-2,6" stroke="#7C4A21" stroke-width="1.6" stroke-linecap="round"/>'
+             '<ellipse cx="2" cy="4" rx="34" ry="3" stroke="#CCFBF1" stroke-width="1" opacity=".7"/></g></g>')
+    # ducks swimming
+    for i, (dx, col) in enumerate(((440, "#B07D4F"), (458, "#F8FAFC"), (474, "#B07D4F"))):
+        o.append(f'<g transform="translate({dx},{y+3 + (i % 2) * 3})"><g>'
+                 f'<animateTransform attributeName="transform" type="translate" values="0,0;0,-1;0,0" dur="{F(2+i*.3)}s" repeatCount="indefinite"/>'
+                 '<path d="M8,1 L18,-1 M8,2 L18,4" stroke="#CCFBF1" stroke-width=".7" opacity=".7"/>'
+                 f'<path d="M-6,0 C-7,-4 -2,-6 3,-5 C6,-5 8,-4 9,-7 C9.5,-3 8.5,-1 6,0 Z" fill="{col}"/>'
+                 f'<path d="M-6.5,-2 L-6,-7" stroke="{col}" stroke-width="2.2" stroke-linecap="round"/>'
+                 f'<circle cx="-5.6" cy="-8" r="2.4" fill="{"#5C4033" if col != "#F8FAFC" else "#F8FAFC"}"/>'
+                 '<path d="M-7.6,-8.4 L-10,-7.6 L-7.6,-7 Z" fill="#F59E0B"/></g></g>')
+    # a coconut palm on the far bank and grass along the near bank
+    o.append(palm(650, y - 14, 56, -10, .62, rnd))
+    tf = "".join(f"M{F(gx)},{F(y+20)}l-2,-6M{F(gx)},{F(y+20)}l0,-7M{F(gx)},{F(y+20)}l2,-6" for gx in range(12, x1, 26))
+    o.append(f'<path d="{tf}" stroke="#4D7C0F" stroke-width="1" stroke-linecap="round"/>')
+    return "".join(o)
+
+
 # ---------------------------------------------------------------------------
 def render(user):
     cc = user["contributionsCollection"]
@@ -415,7 +470,7 @@ def render(user):
     # sky details: clouds, birds, kite
     o.append(cloud(470, 128, 1.0) + cloud(730, 40, .7) + cloud(250, 150, .6))
     o.append(birds(560, 40))
-    kite_x, kite_y = 760, 112
+    kite_x, kite_y = 470, 138
 
     # village notice board with a thatched cap
     o.append(signboard(790, 16, cal, cc, longest, current, best))
@@ -424,6 +479,7 @@ def render(user):
     o.append(banana(560, 200, .9, rnd) + banana(700, 203, 1.0, rnd))
     o.append(hut(600, 200, .55))
     o.append(haystack(682, 206, .8))
+    o.append(palm(756, 200, 120, -26, .95, rnd))
 
     # ---- the paddy field: 53 weeks x 7 days, oblique perspective ----
     cw, rh, sk = 20, 25, 9
@@ -493,9 +549,9 @@ def render(user):
 
     # scarecrow standing in the middle of the paddies
     o.append(scarecrow(x0 + 31 * cw + 3 * sk, y0 + 2 * rh + rh * 0.8))
-    # palms framing the field (drawn after it so nothing covers them)
-    o.append(palm(26, 404, 150, 22, 1.0, rnd))
-    o.append(palm(1178, 410, 140, -22, 1.0, rnd))
+    # beside the field: a grazing buffalo on the left, a banana tree on the right
+    o.append(buffalo(40, 382))
+    o.append(banana(1172, 404, .8, rnd))
 
     # front dyke with the farmer, month labels
     fy = y0 + 7 * rh + 6
@@ -537,6 +593,7 @@ def render(user):
     o.append(f'<text x="{lx}" y="{ly+14}" font-family="Arial, sans-serif" font-size="13" fill="#1F4D2B" font-weight="bold">Nhiều</text>')
 
     # language harvest: rice sacks
+    o.append(canal(fy + 150, 690, rnd))
     o.append(f'<text x="70" y="{ly+58}" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#1F4D2B">'
              f'Cò trắng đứng chỗ ruộng còn nước, người gánh lúa đi dọc bờ ruộng mỗi ngày.</text>')
     sy = fy + 44

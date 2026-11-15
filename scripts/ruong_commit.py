@@ -591,8 +591,15 @@ def render(user):
     for (wi, di, xl, yt) in sorted(picks[:3], key=lambda c: c[1]):
         o.append(egret(xl + cw * 0.4 - sk * .5, yt + rh * 0.75, flip=rnd.random() < .5))
 
-    # scarecrow standing in the middle of the paddies
-    o.append(scarecrow(x0 + 31 * cw + 3 * sk, y0 + 2 * rh + rh * 0.8))
+    # scarecrow guards the ripest paddy: the best day of the year (ngày bội thu)
+    sw, sd = 31, 2
+    for wi, w in enumerate(weeks):
+        for d in w["contributionDays"]:
+            if d["date"] == best["date"]:
+                sw, sd = wi, dt.date.fromisoformat(d["date"]).isoweekday() % 7
+    sd = min(sd, 5)  # on the front row it would stand on the farmer; step back one row
+    sxl = x0 + sw * cw + (7 - sd) * sk
+    o.append(scarecrow(sxl + cw * 0.5 - sk * 0.5, y0 + sd * rh + rh * 0.8))
     # beside the field: a grazing buffalo on the left, a banana tree on the right
     o.append(buffalo(40, 382))
     o.append(banana(1172, 404, .8, rnd))
@@ -654,7 +661,7 @@ def render(user):
     # language harvest: rice sacks
     o.append(canal(fy + 150, 690, rnd))
     o.append(f'<text x="70" y="{ly+58}" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#1F4D2B">'
-             f'Cò trắng đứng chỗ ruộng còn nước, người gánh lúa đi dọc bờ ruộng mỗi ngày.</text>')
+             f'Cò trắng đứng chỗ ruộng còn nước, bù nhìn canh ô ngày bội thu, người gánh lúa đi dọc bờ.</text>')
     sy = fy + 44
     o.append(f'<text x="1175" y="{sy+12}" text-anchor="end" font-family="\'Times New Roman\', Georgia, serif" font-size="19" font-weight="bold" fill="#14532D">Lúa về đầy bao — ngôn ngữ hay dùng</text>')
     sx = 1180 - 78 * len(langs)

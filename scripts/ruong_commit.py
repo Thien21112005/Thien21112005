@@ -161,20 +161,30 @@ def egret(x, y, flip=False):
             f'<circle cx="8" cy="-25" r=".5" fill="#0F172A"/></g></g>')
 
 
-def farmer(x, y):
-    """Người gánh lúa, đội nón lá, đi trên bờ ruộng."""
-    return (f'<g transform="translate({F(x)},{F(y)})"><g>'
-            f'<animateTransform attributeName="transform" type="translate" values="0,0;0,-1.2;0,0" dur="1.1s" repeatCount="indefinite"/>'
+def farmer(x_start, x_end, y, dur=70.0):
+    """Người gánh lúa đội nón lá đi qua đi lại dọc bờ ruộng, đòn gánh chao nhẹ."""
+    begin = -0.31 * dur  # start around the middle of the dyke
+    legs_a = "M-2,-12 L-5,0 M2,-12 L3,0"
+    legs_b = "M-2,-12 L-1,0 M2,-12 L5,0"
+    return (f'<g transform="translate(0,{F(y)})"><g>'
+            f'<animateTransform attributeName="transform" type="translate" values="{F(x_start)},0;{F(x_end)},0;{F(x_start)},0" '
+            f'dur="{F(dur)}s" begin="{F(begin)}s" repeatCount="indefinite"/>'
+            # face the walking direction: right on the way out, left on the way back
+            f'<g><animateTransform attributeName="transform" type="scale" values="-1,1;1,1" keyTimes="0;.5" calcMode="discrete" '
+            f'dur="{F(dur)}s" begin="{F(begin)}s" repeatCount="indefinite"/>'
             f'<ellipse cx="0" cy="1" rx="16" ry="2" fill="#3F2A14" opacity=".25"/>'
-            f'<path d="M-2,-12 L-4,0 M2,-12 L4,0" stroke="#1F2937" stroke-width="2.2" stroke-linecap="round"/>'
+            f'<g><animateTransform attributeName="transform" type="translate" values="0,0;0,-1.2;0,0" dur=".55s" repeatCount="indefinite"/>'
+            f'<path d="{legs_a}" stroke="#1F2937" stroke-width="2.2" stroke-linecap="round">'
+            f'<animate attributeName="d" values="{legs_a};{legs_b};{legs_a}" dur="1.1s" repeatCount="indefinite"/></path>'
             f'<path d="M-5,-25 L5,-25 L6,-11 L-6,-11 Z" fill="#5B3A1E"/>'
+            f'<g><animateTransform attributeName="transform" type="rotate" values="-3 0 -27;3 0 -27;-3 0 -27" dur="1.1s" repeatCount="indefinite"/>'
             f'<path d="M-24,-26 L24,-28" stroke="#A16207" stroke-width="1.6" stroke-linecap="round"/>'
             f'<path d="M-24,-26 L-27,-14 M-24,-26 L-21,-14 M24,-28 L21,-15 M24,-28 L27,-15" stroke="#78350F" stroke-width=".6"/>'
             f'<path d="M-30,-14 L-18,-14 L-20,-7 L-28,-7 Z M18,-15 L30,-15 L28,-8 L20,-8 Z" fill="#B45309"/>'
-            f'<path d="M-30,-14 C-28,-19 -20,-19 -18,-14 Z M18,-15 C20,-20 28,-20 30,-15 Z" fill="#EAB308"/>'
+            f'<path d="M-30,-14 C-28,-19 -20,-19 -18,-14 Z M18,-15 C20,-20 28,-20 30,-15 Z" fill="#EAB308"/></g>'
             f'<circle cx="0" cy="-29" r="4.4" fill="#1E293B"/><ellipse cx="-1" cy="-28.6" rx="3.4" ry="3.8" fill="#E9B57F"/>'
             f'<path d="M0,-41 L-11,-31 L11,-31 Z" fill="#FDE68A" stroke="#B4892A" stroke-width=".8"/>'
-            f'</g></g>')
+            f'</g></g></g></g>')
 
 
 def hut(x, y, s):
@@ -608,7 +618,7 @@ def render(user):
     fy = y0 + 7 * rh + 6
     o.append(f'<path d="M{x0-20},{fy} L{x0+len(weeks)*cw+12},{fy} L{x0+len(weeks)*cw+12},{fy+10} L{x0-20},{fy+10} Z" fill="#A27B48"/>')
     o.append(f'<path d="M{x0-20},{fy+1} L{x0+len(weeks)*cw+12},{fy+1}" stroke="#6E9C34" stroke-width="2.5"/>')
-    o.append(farmer(x0 + len(weeks) * cw * 0.62, fy + 2))
+    o.append(farmer(x0 + 24, x0 + len(weeks) * cw - 16, fy + 2))
     # ducks running along the dyke + a kid flying a kite
     o.append(dyke_ducks(x0 + 120, fy + 3))
     kid_x = x0 + len(weeks) * cw * 0.42
@@ -661,7 +671,7 @@ def render(user):
     # language harvest: rice sacks
     o.append(canal(fy + 150, 690, rnd))
     o.append(f'<text x="70" y="{ly+58}" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#1F4D2B">'
-             f'Cò trắng đứng chỗ ruộng còn nước, bù nhìn canh ô ngày bội thu, người gánh lúa đi dọc bờ.</text>')
+             f'Cò trắng đứng chỗ ruộng còn nước, bù nhìn canh ô ngày bội thu, người gánh lúa đi qua đi lại dọc bờ.</text>')
     sy = fy + 44
     o.append(f'<text x="1175" y="{sy+12}" text-anchor="end" font-family="\'Times New Roman\', Georgia, serif" font-size="19" font-weight="bold" fill="#14532D">Lúa về đầy bao — ngôn ngữ hay dùng</text>')
     sx = 1180 - 78 * len(langs)

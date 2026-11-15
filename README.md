@@ -170,7 +170,7 @@
 | **Calculator App** | `Java` `UI` | Máy tính nhiều chế độ, nhỏ mà có võ | [Ghé xem →](https://github.com/Thien21112005/calculator-app) |
 
 <div align="center">
-  <img src="./decorations/river-meander.svg" width="100%" alt="Dòng sông miền Tây" />
+  <img src="./decorations/ho-sen.svg" width="100%" alt="Hồ sen quê nhà với cây cầu nhỏ bắc ngang và hàng dừa" />
 </div>
 
 ## 📒 Sổ tay ghi chép mùa màng
